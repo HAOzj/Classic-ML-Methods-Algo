@@ -1,0 +1,73 @@
+{
+    "title": "python数据分析攻略",
+    "description": "介绍python的基本的数据分析工具",
+    "gitbook": ">=2.0.0",
+    "author" : "hsz",
+    "language": "zh-hans",
+    "plugins": [ "-lunr","-search","search-pro",
+        "advanced-emoji",
+        "github" ,"github-buttons",
+        "mathjax",
+        "splitter",
+        "expandable-chapters-small",
+        "tbfed-pagefooter",
+        "-sharing",
+        "sitemap-general",
+        "anchors","anchor-navigation-ex"],
+    "pluginsConfig": {
+        "sharing": {
+           "weibo": false,
+           "facebook": false,
+           "twitter": false,
+           "google": true,
+           "instapaper": false,
+           "vk": false,
+           "all": [ "google"]
+        },
+        "github": {
+            "url": "https://github.com/hsz1273327"
+        },
+        "github-buttons": {
+            "repo": "hsz1273327/TutorialForPythonDataAnalysis",
+            "types": ["star","watch","fork"],
+            "size": "small"
+        },
+        "search-pro": {
+            "cutWordLib": "nodejieba",
+            "defineWord" : ["Gitbook Use"]
+        },
+        "tbfed-pagefooter": {
+            "copyright":"Copyright &copy hsz 2017",
+            "modify_label": "该文件修订时间：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "sitemap-general": {
+            "prefix": "http://blog.hszofficial.site/TutorialForPythonDataAnalysis/"
+        },
+        "anchor-navigation-ex": {
+            "showLevel": true,
+            "associatedWithSummary": true,
+            "mode": "float",
+            "float": {
+                "showLevelIcon": true,
+                "level1Icon": "fa fa-hand-o-right",
+                "level2Icon": "fa fa-hand-o-right",
+                "level3Icon": "fa fa-hand-o-right"
+            },
+            "pageTop": {
+                "showLevelIcon": false,
+                "level1Icon": "fa fa-hand-o-right",
+                "level2Icon": "fa fa-hand-o-right",
+                "level3Icon": "fa fa-hand-o-right"
+            }
+        }
+    },
+    "structure": {
+        "readme": "README.md"
+    },
+    "links" : {
+    "sidebar" : {
+        "Home" : "http://blog.hszofficial.site/"
+    }
+}
+}

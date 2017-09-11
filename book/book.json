@@ -1,12 +1,13 @@
 {
-    "title": "python数据分析攻略",
-    "description": "介绍python的基本的数据分析工具",
+    "title": "传统机器学习方法及算法",
+    "description": "传统机器学习方法及算法",
     "gitbook": ">=2.0.0",
-    "author" : "hsz",
+    "author" : "NLP-Deeplearning-Club",
     "language": "zh-hans",
     "plugins": [ "-lunr","-search","search-pro",
         "advanced-emoji",
-        "github" ,"github-buttons",
+        "github" ,
+        "github-buttons",
         "mathjax",
         "splitter",
         "expandable-chapters-small",
@@ -25,10 +26,10 @@
            "all": [ "google"]
         },
         "github": {
-            "url": "https://github.com/hsz1273327"
+            "url": "https://github.com/NLP-Deeplearning-Club"
         },
         "github-buttons": {
-            "repo": "hsz1273327/TutorialForPythonDataAnalysis",
+            "repo": "NLP-Deeplearning-Club/Classic-ML-Methods-Algo",
             "types": ["star","watch","fork"],
             "size": "small"
         },
@@ -37,12 +38,12 @@
             "defineWord" : ["Gitbook Use"]
         },
         "tbfed-pagefooter": {
-            "copyright":"Copyright &copy hsz 2017",
+            "copyright":"Copyright &copy NLP-Deeplearning-Club 2017",
             "modify_label": "该文件修订时间：",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
         "sitemap-general": {
-            "prefix": "http://blog.hszofficial.site/TutorialForPythonDataAnalysis/"
+            "prefix": "https://nlp-deeplearning-club.github.io/Classic-ML-Methods-Algo/"
         },
         "anchor-navigation-ex": {
             "showLevel": true,
@@ -67,7 +68,7 @@
     },
     "links" : {
     "sidebar" : {
-        "Home" : "http://blog.hszofficial.site/"
+        "Home" : "https://nlp-deeplearning-club.github.io/"
     }
 }
 }

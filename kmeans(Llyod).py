@@ -85,8 +85,7 @@ def Kmeans(Dataset, k, d, maxite = 10) :
 		# if d equals 2, plot n points and k centers in form of diamond colorised according to their cluster
 		if(d ==2):
 			Color = ['b', 'g', 'r', 'c', 'm', 'y', 'k', 'w']
-			Colors = [Color[i] for i in res[1]]
-			Center, Label = res
+			Colors = [Color[i] for i in Label]
 			for i in range(n):
 				plt.scatter(Dataset[i][0],Dataset[i][1],color = Colors[i])
 			for i in range(k):

@@ -4,16 +4,69 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-Dataset	../ipynbs/无监督学习/code/kmeans(git).py	/^Dataset = [a,b,c,d,f]$/;"	kind:variable	line:106
-Kmeans	../ipynbs/无监督学习/code/kmeans(git).py	/^def Kmeans(Dataset, k, d, maxite = 10) :$/;"	kind:function	line:18
-a	../ipynbs/无监督学习/code/kmeans(git).py	/^a =[2,2]$/;"	kind:variable	line:101
-b	../ipynbs/无监督学习/code/kmeans(git).py	/^b =[1,2]$/;"	kind:variable	line:102
-c	../ipynbs/无监督学习/code/kmeans(git).py	/^c =[1,1]$/;"	kind:variable	line:103
-cm	../ipynbs/无监督学习/code/kmeans(git).py	/^import matplotlib.cm as cm$/;"	kind:namespace	line:10
-d	../ipynbs/无监督学习/code/kmeans(git).py	/^d =[0,0]$/;"	kind:variable	line:104
-f	../ipynbs/无监督学习/code/kmeans(git).py	/^f =[3,2]$/;"	kind:variable	line:105
-kmeans(git).py	../ipynbs/无监督学习/code/kmeans(git).py	1;"	kind:file	line:1
-matplotlib	../ipynbs/无监督学习/code/kmeans(git).py	/^import matplotlib.cm as cm$/;"	kind:namespace	line:10
-matplotlib	../ipynbs/无监督学习/code/kmeans(git).py	/^import matplotlib.pyplot as plt$/;"	kind:namespace	line:9
-plt	../ipynbs/无监督学习/code/kmeans(git).py	/^import matplotlib.pyplot as plt$/;"	kind:namespace	line:9
-res	../ipynbs/无监督学习/code/kmeans(git).py	/^res = Kmeans(Dataset,2,2)$/;"	kind:variable	line:109
+Dataset	../ipynbs/无监督学习/kmean.py	/^Dataset = [a,b,c,d,f]$/;"	kind:variable	line:104
+Dataset	../ipynbs/无监督学习/kmeans(Llyod).py	/^Dataset = [a,b,c,d,f]$/;"	kind:variable	line:105
+DimensionError	../ipynbs/无监督学习/kmeans(git).py	/^class DimensionError(ValueError):$/;"	kind:class	line:13
+DimensionError	../ipynbs/无监督学习/kmeans.py	/^class DimensionError(ValueError):$/;"	kind:class	line:7
+HC(SLINK）.py	../ipynbs/无监督学习/HC(SLINK）.py	1;"	kind:file	line:1
+Kmeans	../ipynbs/无监督学习/kmean.py	/^def Kmeans(Dataset, k, d, maxite = 10) :$/;"	kind:function	line:17
+Kmeans	../ipynbs/无监督学习/kmeans(Llyod).py	/^def Kmeans(Dataset, k, d, maxite = 10) :$/;"	kind:function	line:18
+SLINK	../ipynbs/无监督学习/HC(SLINK）.py	/^def SLINK(Dataset, d):$/;"	kind:function	line:40
+__init__.py	../ipynbs/无监督学习/unsupervised/__init__.py	1;"	kind:file	line:1
+__init__.py	../ipynbs/无监督学习/vector_distance/__init__.py	1;"	kind:file	line:1
+_k_means	../ipynbs/无监督学习/kmeans(git).py	/^def _k_means(dataset, k, d,Center, Label,maxite=10,):$/;"	kind:function	line:46
+_k_means	../ipynbs/无监督学习/kmeans.py	/^def _k_means(dataset, k, d,Center, Label,maxite=10,):$/;"	kind:function	line:41
+a	../ipynbs/无监督学习/kmean.py	/^a =[2,2]$/;"	kind:variable	line:99
+a	../ipynbs/无监督学习/kmeans(Llyod).py	/^a =[2,2]$/;"	kind:variable	line:100
+b	../ipynbs/无监督学习/kmean.py	/^b =[1,2]$/;"	kind:variable	line:100
+b	../ipynbs/无监督学习/kmeans(Llyod).py	/^b =[1,2]$/;"	kind:variable	line:101
+c	../ipynbs/无监督学习/kmean.py	/^c =[1,1]$/;"	kind:variable	line:101
+c	../ipynbs/无监督学习/kmeans(Llyod).py	/^c =[1,1]$/;"	kind:variable	line:102
+chebyshev_distance.py	../ipynbs/无监督学习/vector_distance/chebyshev_distance.py	1;"	kind:file	line:1
+cm	../ipynbs/无监督学习/kmean.py	/^import matplotlib.cm as cm$/;"	kind:namespace	line:9
+cm	../ipynbs/无监督学习/kmeans(Llyod).py	/^import matplotlib.cm as cm$/;"	kind:namespace	line:10
+cm	../ipynbs/无监督学习/kmeans(git).py	/^import matplotlib.cm as cm$/;"	kind:namespace	line:10
+cm	../ipynbs/无监督学习/kmeans.py	/^import matplotlib.cm as cm$/;"	kind:namespace	line:4
+cos_distance.py	../ipynbs/无监督学习/vector_distance/cos_distance.py	1;"	kind:file	line:1
+d	../ipynbs/无监督学习/kmean.py	/^d =[0,0]$/;"	kind:variable	line:102
+d	../ipynbs/无监督学习/kmeans(Llyod).py	/^d =[0,0]$/;"	kind:variable	line:103
+draw_2d	../ipynbs/无监督学习/kmeans(git).py	/^def draw_2d(dataset,k,d,Center):$/;"	kind:function	line:17
+draw_2d	../ipynbs/无监督学习/kmeans.py	/^def draw_2d(dataset,k,d,Center,Label):$/;"	kind:function	line:11
+euclidean_distance.py	../ipynbs/无监督学习/vector_distance/euclidean_distance.py	1;"	kind:file	line:1
+f	../ipynbs/无监督学习/kmean.py	/^f =[3,2]$/;"	kind:variable	line:103
+f	../ipynbs/无监督学习/kmeans(Llyod).py	/^f =[3,2]$/;"	kind:variable	line:104
+hamming_distance.py	../ipynbs/无监督学习/vector_distance/hamming_distance.py	1;"	kind:file	line:1
+init_centers	../ipynbs/无监督学习/kmeans(git).py	/^def init_centers(dataset,k,d):$/;"	kind:function	line:32
+init_centers	../ipynbs/无监督学习/kmeans.py	/^def init_centers(dataset,k,d):$/;"	kind:function	line:26
+k_means	../ipynbs/无监督学习/kmeans(git).py	/^def k_means(dataset, k, d, maxite=10):$/;"	kind:function	line:81
+k_means	../ipynbs/无监督学习/kmeans.py	/^def k_means(dataset, k, d, maxite=10):$/;"	kind:function	line:76
+kmean.py	../ipynbs/无监督学习/kmean.py	1;"	kind:file	line:1
+kmeans(Llyod).py	../ipynbs/无监督学习/kmeans(Llyod).py	1;"	kind:file	line:1
+kmeans(git).py	../ipynbs/无监督学习/kmeans(git).py	1;"	kind:file	line:1
+kmeans.py	../ipynbs/无监督学习/kmeans.py	1;"	kind:file	line:1
+main	../ipynbs/无监督学习/kmeans(git).py	/^def main():$/;"	kind:function	line:104
+main	../ipynbs/无监督学习/kmeans.py	/^def main():$/;"	kind:function	line:98
+manhattan_distance.py	../ipynbs/无监督学习/vector_distance/manhattan_distance.py	1;"	kind:file	line:1
+matplotlib	../ipynbs/无监督学习/kmean.py	/^import matplotlib.cm as cm$/;"	kind:namespace	line:9
+matplotlib	../ipynbs/无监督学习/kmean.py	/^import matplotlib.pyplot as plt$/;"	kind:namespace	line:8
+matplotlib	../ipynbs/无监督学习/kmeans(Llyod).py	/^import matplotlib.cm as cm$/;"	kind:namespace	line:10
+matplotlib	../ipynbs/无监督学习/kmeans(Llyod).py	/^import matplotlib.pyplot as plt$/;"	kind:namespace	line:9
+matplotlib	../ipynbs/无监督学习/kmeans(git).py	/^import matplotlib.cm as cm$/;"	kind:namespace	line:10
+matplotlib	../ipynbs/无监督学习/kmeans(git).py	/^import matplotlib.pyplot as plt$/;"	kind:namespace	line:9
+matplotlib	../ipynbs/无监督学习/kmeans.py	/^import matplotlib.cm as cm$/;"	kind:namespace	line:4
+matplotlib	../ipynbs/无监督学习/kmeans.py	/^import matplotlib.pyplot as plt$/;"	kind:namespace	line:3
+minkowski_distance.py	../ipynbs/无监督学习/vector_distance/minkowski_distance.py	1;"	kind:file	line:1
+norm	../ipynbs/无监督学习/HC(SLINK）.py	/^def norm(a,b, metric = 'euclidean'):$/;"	kind:function	line:13
+np	../ipynbs/无监督学习/kmeans(git).py	/^import numpy as np$/;"	kind:namespace	line:7
+np	../ipynbs/无监督学习/kmeans.py	/^import numpy as np$/;"	kind:namespace	line:1
+plt	../ipynbs/无监督学习/kmean.py	/^import matplotlib.pyplot as plt$/;"	kind:namespace	line:8
+plt	../ipynbs/无监督学习/kmeans(Llyod).py	/^import matplotlib.pyplot as plt$/;"	kind:namespace	line:9
+plt	../ipynbs/无监督学习/kmeans(git).py	/^import matplotlib.pyplot as plt$/;"	kind:namespace	line:9
+plt	../ipynbs/无监督学习/kmeans.py	/^import matplotlib.pyplot as plt$/;"	kind:namespace	line:3
+randint	../ipynbs/无监督学习/kmeans(git).py	/^from random import sample, randint$/;"	kind:namespace	line:8
+randint	../ipynbs/无监督学习/kmeans.py	/^from random import sample, randint$/;"	kind:namespace	line:2
+res	../ipynbs/无监督学习/kmean.py	/^res = Kmeans(Dataset,2,2)$/;"	kind:variable	line:107
+res	../ipynbs/无监督学习/kmeans(Llyod).py	/^res = Kmeans(Dataset,2,2)$/;"	kind:variable	line:108
+sample	../ipynbs/无监督学习/kmeans(git).py	/^from random import sample, randint$/;"	kind:namespace	line:8
+sample	../ipynbs/无监督学习/kmeans.py	/^from random import sample, randint$/;"	kind:namespace	line:2
+层次聚类（SLINK）.py	../ipynbs/无监督学习/层次聚类（SLINK）.py	1;"	kind:file	line:1

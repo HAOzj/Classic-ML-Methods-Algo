@@ -42,12 +42,12 @@ def SLINK(Dataset, d):
 	# All the data points are labelled as 1, 2, ..., n
 	# A(i) is Lambda, noting the lowest level at which i is no longer the last point in his cluster  
 	# B(i) is the last point in the cluster which i then joins
-	A = [n+1 for i  in range(n)]
+	A = [10000 for i  in range(n)]
 	B = [n*2 for i in range(n)]
 	
 	#initialisation
-	A[0] = 1
-	B[0] = 1
+	A[0] = 10000
+	B[0] = 0
 	
 	for k in range(1,n):
 		B[k] = k
@@ -68,3 +68,15 @@ def SLINK(Dataset, d):
 			if(A[i] >= A[B[i]]):
 				B[i] = k 
 	return(A,B)
+	
+## main function
+a =[2,2]
+b =[1,2]
+c =[1,1]
+d =[0,0]
+e =[3,2]
+Dataset = [a,b,c,d,e]
+Dataset.append([1.5,0])
+Dataset.append([3,4])
+res =SLINK(Dataset,2)
+print(res)

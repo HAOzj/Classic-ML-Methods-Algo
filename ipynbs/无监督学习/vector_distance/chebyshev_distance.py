@@ -1,7 +1,7 @@
 import numpy as np
 
 
-def chebyshev_distance(x, y, accuracy=5):
+def chebyshev_distance(x, y, *, accuracy=5):
     """计算切比雪夫距离
     Parameters:
         x (numpy.dnarray): - 向量x

@@ -1,2 +1,0 @@
-class DimensionError(ValueError):
-    pass

@@ -39,10 +39,10 @@
 + 无监督
     + K-means方法(主要是Lloyd算法)
     + 层次聚类方法(Hierarchical Clustering)
-    + 高斯混合模型(GMM，Gaussian Mixture Model)
+    + 高斯混合模型(GMM，Gaussian Mixture Model)
     
 + 关联规则
-    + A Priori关联规则
+    + A Priori关联规则
     + FP Growth(Frequent Pattern Growth)关联规则
     
 + 有监督

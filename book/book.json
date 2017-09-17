@@ -1,0 +1,74 @@
+{
+    "title": "传统机器学习方法及算法",
+    "description": "传统机器学习方法及算法",
+    "gitbook": ">=2.0.0",
+    "author" : "NLP-Deeplearning-Club",
+    "language": "zh-hans",
+    "plugins": [ "-lunr","-search","search-pro",
+        "advanced-emoji",
+        "github" ,
+        "github-buttons",
+        "mathjax",
+        "splitter",
+        "expandable-chapters-small",
+        "tbfed-pagefooter",
+        "-sharing",
+        "sitemap-general",
+        "anchors","anchor-navigation-ex"],
+    "pluginsConfig": {
+        "sharing": {
+           "weibo": false,
+           "facebook": false,
+           "twitter": false,
+           "google": true,
+           "instapaper": false,
+           "vk": false,
+           "all": [ "google"]
+        },
+        "github": {
+            "url": "https://github.com/NLP-Deeplearning-Club"
+        },
+        "github-buttons": {
+            "repo": "NLP-Deeplearning-Club/Classic-ML-Methods-Algo",
+            "types": ["star","watch","fork"],
+            "size": "small"
+        },
+        "search-pro": {
+            "cutWordLib": "nodejieba",
+            "defineWord" : ["Gitbook Use"]
+        },
+        "tbfed-pagefooter": {
+            "copyright":"Copyright &copy NLP-Deeplearning-Club 2017",
+            "modify_label": "该文件修订时间：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "sitemap-general": {
+            "prefix": "https://nlp-deeplearning-club.github.io/Classic-ML-Methods-Algo/"
+        },
+        "anchor-navigation-ex": {
+            "showLevel": true,
+            "associatedWithSummary": true,
+            "mode": "float",
+            "float": {
+                "showLevelIcon": true,
+                "level1Icon": "fa fa-hand-o-right",
+                "level2Icon": "fa fa-hand-o-right",
+                "level3Icon": "fa fa-hand-o-right"
+            },
+            "pageTop": {
+                "showLevelIcon": false,
+                "level1Icon": "fa fa-hand-o-right",
+                "level2Icon": "fa fa-hand-o-right",
+                "level3Icon": "fa fa-hand-o-right"
+            }
+        }
+    },
+    "structure": {
+        "readme": "README.md"
+    },
+    "links" : {
+    "sidebar" : {
+        "Home" : "https://nlp-deeplearning-club.github.io/"
+    }
+}
+}

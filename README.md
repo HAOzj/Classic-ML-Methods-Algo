@@ -37,18 +37,15 @@
 该项目按照以上分类方式,分为三个章节.每一章节中会有典型方法和典型应用场景,其中关联法则在诞生时属于非监督学习，用来发现物品之间有趣的关联,也就是模式（pattern）,后来我们也发展出了它作为分类器的应用,属于监督学习的场景.涉及到的方法有:
 
 + 无监督
-
     + K-means方法(主要是Lloyd算法)
     + 层次聚类方法(Hierarchical Clustering)
     + 高斯混合模型(GMM，Gaussian Mixture Model)
     
 + 关联规则
-
     + A Priori关联规则
     + FP Growth(Frequent Pattern Growth)关联规则
     
 + 有监督
-
     + KNN(K Nearest Neighbors）
     + 朴素贝叶斯分类器(Naive Bayes Classifier)
     + 决策树(Decision Tree)

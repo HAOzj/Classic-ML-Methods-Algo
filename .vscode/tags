@@ -1,0 +1,19 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Dataset	../ipynbs/无监督学习/code/kmeans(git).py	/^Dataset = [a,b,c,d,f]$/;"	kind:variable	line:106
+Kmeans	../ipynbs/无监督学习/code/kmeans(git).py	/^def Kmeans(Dataset, k, d, maxite = 10) :$/;"	kind:function	line:18
+a	../ipynbs/无监督学习/code/kmeans(git).py	/^a =[2,2]$/;"	kind:variable	line:101
+b	../ipynbs/无监督学习/code/kmeans(git).py	/^b =[1,2]$/;"	kind:variable	line:102
+c	../ipynbs/无监督学习/code/kmeans(git).py	/^c =[1,1]$/;"	kind:variable	line:103
+cm	../ipynbs/无监督学习/code/kmeans(git).py	/^import matplotlib.cm as cm$/;"	kind:namespace	line:10
+d	../ipynbs/无监督学习/code/kmeans(git).py	/^d =[0,0]$/;"	kind:variable	line:104
+f	../ipynbs/无监督学习/code/kmeans(git).py	/^f =[3,2]$/;"	kind:variable	line:105
+kmeans(git).py	../ipynbs/无监督学习/code/kmeans(git).py	1;"	kind:file	line:1
+matplotlib	../ipynbs/无监督学习/code/kmeans(git).py	/^import matplotlib.cm as cm$/;"	kind:namespace	line:10
+matplotlib	../ipynbs/无监督学习/code/kmeans(git).py	/^import matplotlib.pyplot as plt$/;"	kind:namespace	line:9
+plt	../ipynbs/无监督学习/code/kmeans(git).py	/^import matplotlib.pyplot as plt$/;"	kind:namespace	line:9
+res	../ipynbs/无监督学习/code/kmeans(git).py	/^res = Kmeans(Dataset,2,2)$/;"	kind:variable	line:109

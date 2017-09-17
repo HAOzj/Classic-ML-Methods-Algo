@@ -45,10 +45,6 @@
     + 层次聚类方法(Hierarchical Clustering)
     + 高斯混合模型(GMM，Gaussian Mixture Model)
     
-+ 关联规则
-    + A Priori关联规则
-    + FP Growth(Frequent Pattern Growth)关联规则
-    
 + 有监督
     + KNN(K Nearest Neighbors）
     + 朴素贝叶斯分类器(Naive Bayes Classifier)
@@ -58,7 +54,13 @@
     + 逻辑回归(Logistics Regression)
     + 支持向量机(SVM,Support Vector Machine)
     + 协同过滤(Collaborative Filtering)
-        
+    
++ 关联规则
+    + A Priori关联规则
+    + FP Growth(Frequent Pattern Growth)关联规则
+
+所有方法/算法的介绍和实现都按照以上三个分类,放在ipynb文件夹下相应的文件夹里.
+
 每个方法/算法,主要介绍方法,背后的逻辑,相关算法的步骤,再进行复杂度和收敛性分析,会穿插一些机器学习通用技巧以及与相似算法的比较.
 
 ## 致谢

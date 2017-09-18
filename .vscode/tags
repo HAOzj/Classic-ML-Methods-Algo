@@ -4,56 +4,104 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-BinaryArrayError	../codes\classic_ml\vector_distance\hamming_distance.py	/^class BinaryArrayError(AttributeError):$/;"	kind:class	line:4
-Dataset	../codes\classic_ml\unsupervised\HC(SLINK��.py	/^Dataset = [a,b,c,d,e]$/;"	kind:variable	line:78
-DimensionError	../ipynbs\�޼ලѧϰ\errors.py	/^class DimensionError(ValueError):$/;"	kind:class	line:1
-HC(SLINK��.py	../codes\classic_ml\unsupervised\HC(SLINK��.py	1;"	kind:file	line:1
-SLINK	../codes\classic_ml\unsupervised\HC(SLINK��.py	/^def SLINK(Dataset, d):$/;"	kind:function	line:40
-__init__.py	../codes\classic_ml\__init__.py	1;"	kind:file	line:1
-__init__.py	../codes\classic_ml\unsupervised\__init__.py	1;"	kind:file	line:1
-__init__.py	../codes\classic_ml\vector_distance\__init__.py	1;"	kind:file	line:1
-_calcul_center	../codes\classic_ml\unsupervised\kmeans.py	/^def _calcul_center(dataset):$/;"	kind:function	line:25
-_init_centers	../codes\classic_ml\unsupervised\kmeans.py	/^def _init_centers(dataset, k):$/;"	kind:function	line:7
-_k_means_iter	../codes\classic_ml\unsupervised\kmeans.py	/^def _k_means_iter(data, center, last_center=None, count=0, *, maxite=10, distance_func=euclidean_distance, **kws):$/;"	kind:function	line:37
-a	../codes\classic_ml\unsupervised\HC(SLINK��.py	/^a =[2,2]$/;"	kind:variable	line:73
-b	../codes\classic_ml\unsupervised\HC(SLINK��.py	/^b =[1,2]$/;"	kind:variable	line:74
-c	../codes\classic_ml\unsupervised\HC(SLINK��.py	/^c =[1,1]$/;"	kind:variable	line:75
-chebyshev_distance	../codes\classic_ml\vector_distance\__init__.py	/^from .chebyshev_distance import chebyshev_distance$/;"	kind:namespace	line:1
-chebyshev_distance	../codes\classic_ml\vector_distance\chebyshev_distance.py	/^def chebyshev_distance(x, y, *, accuracy=5):$/;"	kind:function	line:4
-chebyshev_distance.py	../codes\classic_ml\vector_distance\chebyshev_distance.py	1;"	kind:file	line:1
-cos_distance	../codes\classic_ml\vector_distance\__init__.py	/^from .cos_distance import cos_distance$/;"	kind:namespace	line:2
-cos_distance	../codes\classic_ml\vector_distance\cos_distance.py	/^def cos_distance(x, y, *, accuracy=5):$/;"	kind:function	line:4
-cos_distance.py	../codes\classic_ml\vector_distance\cos_distance.py	1;"	kind:file	line:1
-d	../codes\classic_ml\unsupervised\HC(SLINK��.py	/^d =[0,0]$/;"	kind:variable	line:76
-e	../codes\classic_ml\unsupervised\HC(SLINK��.py	/^e =[3,2]$/;"	kind:variable	line:77
-errors.py	../ipynbs\�޼ලѧϰ\errors.py	1;"	kind:file	line:1
-euclidean_distance	../codes\classic_ml\unsupervised\kmeans.py	/^from vector_distance import euclidean_distance$/;"	kind:namespace	line:3
-euclidean_distance	../codes\classic_ml\vector_distance\__init__.py	/^from .euclidean_distance import euclidean_distance$/;"	kind:namespace	line:3
-euclidean_distance	../codes\classic_ml\vector_distance\euclidean_distance.py	/^def euclidean_distance(x, y, *, accuracy=5):$/;"	kind:function	line:4
-euclidean_distance.py	../codes\classic_ml\vector_distance\euclidean_distance.py	1;"	kind:file	line:1
-groupby	../codes\classic_ml\unsupervised\kmeans.py	/^from itertools import groupby$/;"	kind:namespace	line:4
-hamming_distance	../codes\classic_ml\vector_distance\__init__.py	/^from .hamming_distance import hamming_distance$/;"	kind:namespace	line:4
-hamming_distance	../codes\classic_ml\vector_distance\hamming_distance.py	/^def hamming_distance(x, y):$/;"	kind:function	line:8
-hamming_distance.py	../codes\classic_ml\vector_distance\hamming_distance.py	1;"	kind:file	line:1
-k_means	../codes\classic_ml\unsupervised\__init__.py	/^from .kmeans import k_means/;"	kind:namespace	line:1
-k_means	../codes\classic_ml\unsupervised\kmeans.py	/^def k_means(dataset, k, *, maxite=10, distance_func=euclidean_distance, **kws):$/;"	kind:function	line:77
-kmeans.py	../codes\classic_ml\unsupervised\kmeans.py	1;"	kind:file	line:1
-main	../codes\classic_ml\unsupervised\kmeans.py	/^def main():$/;"	kind:function	line:95
-manhattan_distance	../codes\classic_ml\vector_distance\__init__.py	/^from .manhattan_distance import manhattan_distance$/;"	kind:namespace	line:5
-manhattan_distance	../codes\classic_ml\vector_distance\manhattan_distance.py	/^def manhattan_distance(x, y, *, accuracy=5):$/;"	kind:function	line:4
-manhattan_distance.py	../codes\classic_ml\vector_distance\manhattan_distance.py	1;"	kind:file	line:1
-minkowski_distance	../codes\classic_ml\vector_distance\__init__.py	/^from .minkowski_distance import minkowski_distance/;"	kind:namespace	line:6
-minkowski_distance	../codes\classic_ml\vector_distance\minkowski_distance.py	/^def minkowski_distance(x, y, *, p=2, accuracy=5):$/;"	kind:function	line:4
-minkowski_distance.py	../codes\classic_ml\vector_distance\minkowski_distance.py	1;"	kind:file	line:1
-norm	../codes\classic_ml\unsupervised\HC(SLINK��.py	/^def norm(a,b, metric = 'euclidean'):$/;"	kind:function	line:13
-np	../codes\classic_ml\unsupervised\kmeans.py	/^import numpy as np$/;"	kind:namespace	line:1
-np	../codes\classic_ml\vector_distance\chebyshev_distance.py	/^import numpy as np$/;"	kind:namespace	line:1
-np	../codes\classic_ml\vector_distance\cos_distance.py	/^import numpy as np$/;"	kind:namespace	line:1
-np	../codes\classic_ml\vector_distance\euclidean_distance.py	/^import numpy as np$/;"	kind:namespace	line:1
-np	../codes\classic_ml\vector_distance\hamming_distance.py	/^import numpy as np$/;"	kind:namespace	line:1
-np	../codes\classic_ml\vector_distance\manhattan_distance.py	/^import numpy as np$/;"	kind:namespace	line:1
-np	../codes\classic_ml\vector_distance\minkowski_distance.py	/^import numpy as np$/;"	kind:namespace	line:1
-randint	../codes\classic_ml\unsupervised\kmeans.py	/^from random import sample, randint$/;"	kind:namespace	line:2
-res	../codes\classic_ml\unsupervised\HC(SLINK��.py	/^res =SLINK(Dataset,2)$/;"	kind:variable	line:81
-sample	../codes\classic_ml\unsupervised\kmeans.py	/^from random import sample, randint$/;"	kind:namespace	line:2
-��ξ��ࣨSLINK��.py	../codes\classic_ml\unsupervised\��ξ��ࣨSLINK��.py	1;"	kind:file	line:1
+BinaryArrayError	../codes/classic_ml/vector_distance/hamming_distance.py	/^class BinaryArrayError(AttributeError):$/;"	kind:class	line:4
+BinaryArrayError	../ipynbs/无监督学习/vector_distance/hamming_distance.py	/^class BinaryArrayError(AttributeError):$/;"	kind:class	line:4
+Dataset	../codes/classic_ml/unsupervised/HC(SLINK）.py	/^Dataset = [a,b,c,d,e]$/;"	kind:variable	line:78
+Dataset	../ipynbs/无监督学习/unsupervised/HC(SLINK）.py	/^Dataset = [a,b,c,d,e]$/;"	kind:variable	line:78
+HC(SLINK）.py	../codes/classic_ml/unsupervised/HC(SLINK）.py	1;"	kind:file	line:1
+HC(SLINK）.py	../ipynbs/无监督学习/unsupervised/HC(SLINK）.py	1;"	kind:file	line:1
+SLINK	../codes/classic_ml/unsupervised/HC(SLINK）.py	/^def SLINK(Dataset, d):$/;"	kind:function	line:40
+SLINK	../ipynbs/无监督学习/unsupervised/HC(SLINK）.py	/^def SLINK(Dataset, d):$/;"	kind:function	line:40
+__init__.py	../codes/classic_ml/__init__.py	1;"	kind:file	line:1
+__init__.py	../codes/classic_ml/unsupervised/__init__.py	1;"	kind:file	line:1
+__init__.py	../codes/classic_ml/vector_distance/__init__.py	1;"	kind:file	line:1
+__init__.py	../ipynbs/无监督学习/unsupervised/__init__.py	1;"	kind:file	line:1
+__init__.py	../ipynbs/无监督学习/vector_distance/__init__.py	1;"	kind:file	line:1
+_calcul_center	../codes/classic_ml/unsupervised/kmeans.py	/^def _calcul_center(dataset):$/;"	kind:function	line:25
+_calcul_center	../ipynbs/无监督学习/unsupervised/kmeans.py	/^def _calcul_center(dataset):$/;"	kind:function	line:25
+_init_centers	../codes/classic_ml/unsupervised/kmeans.py	/^def _init_centers(dataset, k):$/;"	kind:function	line:7
+_init_centers	../ipynbs/无监督学习/unsupervised/kmeans.py	/^def _init_centers(dataset, k):$/;"	kind:function	line:7
+_k_means_iter	../codes/classic_ml/unsupervised/kmeans.py	/^def _k_means_iter(data, center, last_center=None, count=0, *, maxite=10, distance_func=euclidean_distance, **kws):$/;"	kind:function	line:37
+_k_means_iter	../ipynbs/无监督学习/unsupervised/kmeans.py	/^def _k_means_iter(data, center, last_center=None, count=0, *, maxite=10, distance_func=euclidean_distance, **kws):$/;"	kind:function	line:37
+a	../codes/classic_ml/unsupervised/HC(SLINK）.py	/^a =[2,2]$/;"	kind:variable	line:73
+a	../ipynbs/无监督学习/unsupervised/HC(SLINK）.py	/^a =[2,2]$/;"	kind:variable	line:73
+b	../codes/classic_ml/unsupervised/HC(SLINK）.py	/^b =[1,2]$/;"	kind:variable	line:74
+b	../ipynbs/无监督学习/unsupervised/HC(SLINK）.py	/^b =[1,2]$/;"	kind:variable	line:74
+c	../codes/classic_ml/unsupervised/HC(SLINK）.py	/^c =[1,1]$/;"	kind:variable	line:75
+c	../ipynbs/无监督学习/unsupervised/HC(SLINK）.py	/^c =[1,1]$/;"	kind:variable	line:75
+chebyshev_distance	../codes/classic_ml/vector_distance/__init__.py	/^from .chebyshev_distance import chebyshev_distance$/;"	kind:namespace	line:1
+chebyshev_distance	../codes/classic_ml/vector_distance/chebyshev_distance.py	/^def chebyshev_distance(x, y, *, accuracy=5):$/;"	kind:function	line:4
+chebyshev_distance	../ipynbs/无监督学习/vector_distance/__init__.py	/^from .chebyshev_distance import chebyshev_distance$/;"	kind:namespace	line:1
+chebyshev_distance	../ipynbs/无监督学习/vector_distance/chebyshev_distance.py	/^def chebyshev_distance(x, y, *, accuracy=5):$/;"	kind:function	line:4
+chebyshev_distance.py	../codes/classic_ml/vector_distance/chebyshev_distance.py	1;"	kind:file	line:1
+chebyshev_distance.py	../ipynbs/无监督学习/vector_distance/chebyshev_distance.py	1;"	kind:file	line:1
+cos_distance	../codes/classic_ml/vector_distance/__init__.py	/^from .cos_distance import cos_distance$/;"	kind:namespace	line:2
+cos_distance	../codes/classic_ml/vector_distance/cos_distance.py	/^def cos_distance(x, y, *, accuracy=5):$/;"	kind:function	line:4
+cos_distance	../ipynbs/无监督学习/vector_distance/__init__.py	/^from .cos_distance import cos_distance$/;"	kind:namespace	line:2
+cos_distance	../ipynbs/无监督学习/vector_distance/cos_distance.py	/^def cos_distance(x, y, *, accuracy=5):$/;"	kind:function	line:4
+cos_distance.py	../codes/classic_ml/vector_distance/cos_distance.py	1;"	kind:file	line:1
+cos_distance.py	../ipynbs/无监督学习/vector_distance/cos_distance.py	1;"	kind:file	line:1
+d	../codes/classic_ml/unsupervised/HC(SLINK）.py	/^d =[0,0]$/;"	kind:variable	line:76
+d	../ipynbs/无监督学习/unsupervised/HC(SLINK）.py	/^d =[0,0]$/;"	kind:variable	line:76
+e	../codes/classic_ml/unsupervised/HC(SLINK）.py	/^e =[3,2]$/;"	kind:variable	line:77
+e	../ipynbs/无监督学习/unsupervised/HC(SLINK）.py	/^e =[3,2]$/;"	kind:variable	line:77
+euclidean_distance	../codes/classic_ml/unsupervised/kmeans.py	/^from vector_distance import euclidean_distance$/;"	kind:namespace	line:3
+euclidean_distance	../codes/classic_ml/vector_distance/__init__.py	/^from .euclidean_distance import euclidean_distance$/;"	kind:namespace	line:3
+euclidean_distance	../codes/classic_ml/vector_distance/euclidean_distance.py	/^def euclidean_distance(x, y, *, accuracy=5):$/;"	kind:function	line:4
+euclidean_distance	../ipynbs/无监督学习/unsupervised/kmeans.py	/^from vector_distance import euclidean_distance$/;"	kind:namespace	line:3
+euclidean_distance	../ipynbs/无监督学习/vector_distance/__init__.py	/^from .euclidean_distance import euclidean_distance$/;"	kind:namespace	line:3
+euclidean_distance	../ipynbs/无监督学习/vector_distance/euclidean_distance.py	/^def euclidean_distance(x, y, *, accuracy=5):$/;"	kind:function	line:4
+euclidean_distance.py	../codes/classic_ml/vector_distance/euclidean_distance.py	1;"	kind:file	line:1
+euclidean_distance.py	../ipynbs/无监督学习/vector_distance/euclidean_distance.py	1;"	kind:file	line:1
+groupby	../codes/classic_ml/unsupervised/kmeans.py	/^from itertools import groupby$/;"	kind:namespace	line:4
+groupby	../ipynbs/无监督学习/unsupervised/kmeans.py	/^from itertools import groupby$/;"	kind:namespace	line:4
+hamming_distance	../codes/classic_ml/vector_distance/__init__.py	/^from .hamming_distance import hamming_distance$/;"	kind:namespace	line:4
+hamming_distance	../codes/classic_ml/vector_distance/hamming_distance.py	/^def hamming_distance(x, y):$/;"	kind:function	line:8
+hamming_distance	../ipynbs/无监督学习/vector_distance/__init__.py	/^from .hamming_distance import hamming_distance$/;"	kind:namespace	line:4
+hamming_distance	../ipynbs/无监督学习/vector_distance/hamming_distance.py	/^def hamming_distance(x, y):$/;"	kind:function	line:8
+hamming_distance.py	../codes/classic_ml/vector_distance/hamming_distance.py	1;"	kind:file	line:1
+hamming_distance.py	../ipynbs/无监督学习/vector_distance/hamming_distance.py	1;"	kind:file	line:1
+k_means	../codes/classic_ml/unsupervised/__init__.py	/^from .kmeans import k_means/;"	kind:namespace	line:1
+k_means	../codes/classic_ml/unsupervised/kmeans.py	/^def k_means(dataset, k, *, maxite=10, distance_func=euclidean_distance, **kws):$/;"	kind:function	line:77
+k_means	../ipynbs/无监督学习/unsupervised/__init__.py	/^from .kmeans import k_means/;"	kind:namespace	line:1
+k_means	../ipynbs/无监督学习/unsupervised/kmeans.py	/^def k_means(dataset, k, *, maxite=10, distance_func=euclidean_distance, **kws):$/;"	kind:function	line:77
+kmeans.py	../codes/classic_ml/unsupervised/kmeans.py	1;"	kind:file	line:1
+kmeans.py	../ipynbs/无监督学习/unsupervised/kmeans.py	1;"	kind:file	line:1
+main	../codes/classic_ml/unsupervised/kmeans.py	/^def main():$/;"	kind:function	line:95
+main	../ipynbs/无监督学习/unsupervised/kmeans.py	/^def main():$/;"	kind:function	line:95
+manhattan_distance	../codes/classic_ml/vector_distance/__init__.py	/^from .manhattan_distance import manhattan_distance$/;"	kind:namespace	line:5
+manhattan_distance	../codes/classic_ml/vector_distance/manhattan_distance.py	/^def manhattan_distance(x, y, *, accuracy=5):$/;"	kind:function	line:4
+manhattan_distance	../ipynbs/无监督学习/vector_distance/__init__.py	/^from .manhattan_distance import manhattan_distance$/;"	kind:namespace	line:5
+manhattan_distance	../ipynbs/无监督学习/vector_distance/manhattan_distance.py	/^def manhattan_distance(x, y, *, accuracy=5):$/;"	kind:function	line:4
+manhattan_distance.py	../codes/classic_ml/vector_distance/manhattan_distance.py	1;"	kind:file	line:1
+manhattan_distance.py	../ipynbs/无监督学习/vector_distance/manhattan_distance.py	1;"	kind:file	line:1
+minkowski_distance	../codes/classic_ml/vector_distance/__init__.py	/^from .minkowski_distance import minkowski_distance/;"	kind:namespace	line:6
+minkowski_distance	../codes/classic_ml/vector_distance/minkowski_distance.py	/^def minkowski_distance(x, y, *, p=2, accuracy=5):$/;"	kind:function	line:4
+minkowski_distance	../ipynbs/无监督学习/vector_distance/__init__.py	/^from .minkowski_distance import minkowski_distance/;"	kind:namespace	line:6
+minkowski_distance	../ipynbs/无监督学习/vector_distance/minkowski_distance.py	/^def minkowski_distance(x, y, *, p=2, accuracy=5):$/;"	kind:function	line:4
+minkowski_distance.py	../codes/classic_ml/vector_distance/minkowski_distance.py	1;"	kind:file	line:1
+minkowski_distance.py	../ipynbs/无监督学习/vector_distance/minkowski_distance.py	1;"	kind:file	line:1
+norm	../codes/classic_ml/unsupervised/HC(SLINK）.py	/^def norm(a,b, metric = 'euclidean'):$/;"	kind:function	line:13
+norm	../ipynbs/无监督学习/unsupervised/HC(SLINK）.py	/^def norm(a,b, metric = 'euclidean'):$/;"	kind:function	line:13
+np	../codes/classic_ml/unsupervised/kmeans.py	/^import numpy as np$/;"	kind:namespace	line:1
+np	../codes/classic_ml/vector_distance/chebyshev_distance.py	/^import numpy as np$/;"	kind:namespace	line:1
+np	../codes/classic_ml/vector_distance/cos_distance.py	/^import numpy as np$/;"	kind:namespace	line:1
+np	../codes/classic_ml/vector_distance/euclidean_distance.py	/^import numpy as np$/;"	kind:namespace	line:1
+np	../codes/classic_ml/vector_distance/hamming_distance.py	/^import numpy as np$/;"	kind:namespace	line:1
+np	../codes/classic_ml/vector_distance/manhattan_distance.py	/^import numpy as np$/;"	kind:namespace	line:1
+np	../codes/classic_ml/vector_distance/minkowski_distance.py	/^import numpy as np$/;"	kind:namespace	line:1
+np	../ipynbs/无监督学习/unsupervised/kmeans.py	/^import numpy as np$/;"	kind:namespace	line:1
+np	../ipynbs/无监督学习/vector_distance/chebyshev_distance.py	/^import numpy as np$/;"	kind:namespace	line:1
+np	../ipynbs/无监督学习/vector_distance/cos_distance.py	/^import numpy as np$/;"	kind:namespace	line:1
+np	../ipynbs/无监督学习/vector_distance/euclidean_distance.py	/^import numpy as np$/;"	kind:namespace	line:1
+np	../ipynbs/无监督学习/vector_distance/hamming_distance.py	/^import numpy as np$/;"	kind:namespace	line:1
+np	../ipynbs/无监督学习/vector_distance/manhattan_distance.py	/^import numpy as np$/;"	kind:namespace	line:1
+np	../ipynbs/无监督学习/vector_distance/minkowski_distance.py	/^import numpy as np$/;"	kind:namespace	line:1
+randint	../codes/classic_ml/unsupervised/kmeans.py	/^from random import sample, randint$/;"	kind:namespace	line:2
+randint	../ipynbs/无监督学习/unsupervised/kmeans.py	/^from random import sample, randint$/;"	kind:namespace	line:2
+res	../codes/classic_ml/unsupervised/HC(SLINK）.py	/^res =SLINK(Dataset,2)$/;"	kind:variable	line:81
+res	../ipynbs/无监督学习/unsupervised/HC(SLINK）.py	/^res =SLINK(Dataset,2)$/;"	kind:variable	line:81
+sample	../codes/classic_ml/unsupervised/kmeans.py	/^from random import sample, randint$/;"	kind:namespace	line:2
+sample	../ipynbs/无监督学习/unsupervised/kmeans.py	/^from random import sample, randint$/;"	kind:namespace	line:2
+层次聚类（SLINK）.py	../codes/classic_ml/unsupervised/层次聚类（SLINK）.py	1;"	kind:file	line:1
+层次聚类（SLINK）.py	../ipynbs/无监督学习/unsupervised/层次聚类（SLINK）.py	1;"	kind:file	line:1

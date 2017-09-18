@@ -8,10 +8,10 @@ def _init_centers(dataset, k):
     """Initilisation of K centres by picking k points in dataset at random 初始化中心点,随机抽取k个点作为中心
 
     Parameters:
-        dataset (Iterable): - list of data points 由向量组成的序列
+        dataset (Iterable): - sequence of data points 由向量组成的序列
         k (int): - given number of clusters 指定的簇数量
     Returns:
-        List: -  list of centers 中心点向量
+        List: - sequence of centers 中心点向量
     """
     center_index = sample(range(len(dataset)), k)
     data = [{"data": vec,
@@ -38,7 +38,7 @@ def _k_means_iter(data, center, last_center=None, count=0, *, maxite=10, distanc
     """iterative way of implementing Lloyd k-means的计算迭代器,使用递归的方式编写
 
     Parameters:
-        data (Iterable): - dataset after clustering in form of [{"data":xxx,"label":xxx},...]  带标签数据集,格式为[{"data":xxx,"label":xxx},...]
+        data (Iterable): - clustered dataset in form of [{"data":xxx,"label":xxx},...]  带标签数据集,格式为[{"data":xxx,"label":xxx},...]
         center (Iterable): - centers in form of [{"data":xxx,"label":xxx},...] 中心位置,格式为[{"data":xxx,"label":xxx},...]
         last_center (Iterable): - centers of last iteration and in form of [{"data":xxx,"label":xxx},...]  上一次的中心位置,格式为[{"data":xxx,"label":xxx},...]
         count (int): - compter of number of iteration 计数器,用于维护迭代次数
@@ -79,7 +79,7 @@ def k_means(dataset, k, *, maxite=10, distance_func=euclidean_distance, **kws):
     it will plot all the points colorized according to their cluster
 
     Parameters:
-        dataset (Iterable): - a list of data points who are also a list of numbers
+        dataset (Iterable): - sequence of data points who are also a list of numbers
         k (int): - number of clusters
         d (int): - dimension of data points
         maxite (int): - maximum of iterations

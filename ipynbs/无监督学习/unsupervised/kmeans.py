@@ -55,12 +55,12 @@ def _k_means_iter(data, center, last_center=None, count=0, *, maxite=10, distanc
     else:
         last_center = list(center)
         for i in data:
-            max_distance = max(
+            min_distance = min(
                 [{
                     "distance": distance_func(i["data"], j["data"], **kws),
                     "label":j["label"]
                 } for j in center], key=lambda x: x["distance"])
-            i["label"] = max_distance["label"]
+            i["label"] = min_distance["label"]
         center = []
         gp = groupby(
             sorted(data, key=lambda x: x["label"]), key=lambda x: x["label"])

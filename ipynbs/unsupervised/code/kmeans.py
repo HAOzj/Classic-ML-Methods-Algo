@@ -1,6 +1,6 @@
 import numpy as np
 from random import sample, randint
-from vector_distance import euclidean_distance
+from metric import euclidean_distance
 from itertools import groupby
 
 
@@ -11,7 +11,7 @@ def _init_centers(dataset, k):
         dataset (Iterable): - sequence of data points 由向量组成的序列
         k (int): - given number of clusters 指定的簇数量
     Returns:
-        List: - sequence of centers 中心点向量
+        List: - list of data points after partial labelling in initialization, list of centers 初始化后部分带标签的数据点列表,中心列表
     """
     center_index = sample(range(len(dataset)), k)
     data = [{"data": vec,

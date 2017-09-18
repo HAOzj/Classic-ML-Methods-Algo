@@ -1,16 +1,20 @@
 '''
-Created on the 12th, Sep, 2017
+Created on the 12th Sep, 2017
 
+Updated on the 18th Sep, 2017
 @author : HAO Zhaojun
 '''
 from math import *
 
-
-# definition of distance between numeric data points 
-# input   : two points a and b,
-#           distance used among 'euclidean' 'squared' 'manhattan' and 'max'
-# output  : distance between two numeric points
 def norm(a,b, metric = 'euclidean'):
+    """
+    definition of distance between numeric data points 
+    parameters :
+        a,b(Iterator)  : - two points to compare
+        metric(string) : - used metric, "euclidean", "squared", "manhattan" or "max" 
+    Return  : 
+        distance(float) : - distance between two numeric points
+    """
 	try :
 		if(len(a) != len(b)):
 			raise ValueError("two vectors are not of the same dimension")
@@ -33,15 +37,17 @@ def norm(a,b, metric = 'euclidean'):
 		print("Not all data points are numeric")
 		
 		
-# function to execute SLINK algo
-# input    : dataset who is a list of data points in form of list,
-#			 dimension of data points
-# output   : pointer representations of dendrograms Pi and Lambda
+
 def SLINK(Dataset, d):
+    """
+    function to execute SLINK algo
+    Parameters : 
+        Dataset(List) : - list of data points, who are also lists
+        d(int) : - dimension of data points
+    Returns : 
+        List: - pointer representations of dendrograms Lambda noting the lowest level at which i is no longer the last point in his cluster and the last point in the cluster which i then joins
+    """
 	n = len(Dataset)
-	# All the data points are labelled as 1, 2, ..., n
-	# A(i) is Lambda, noting the lowest level at which i is no longer the last point in his cluster  
-	# B(i) is the last point in the cluster which i then joins
 	A = [10000 for i  in range(n)]
 	B = [n*2 for i in range(n)]
 	

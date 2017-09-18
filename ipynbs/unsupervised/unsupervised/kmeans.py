@@ -5,13 +5,13 @@ from itertools import groupby
 
 
 def _init_centers(dataset, k):
-    """初始化中心点,随机抽取k个点作为中心
+    """Initilisation of K centres by picking k points in dataset at random 初始化中心点,随机抽取k个点作为中心
 
     Parameters:
-        dataset (Iterable): - 由向量组成的序列
-        k (int): - 指定的簇数量
+        dataset (Iterable): - list of data points 由向量组成的序列
+        k (int): - given number of clusters 指定的簇数量
     Returns:
-        List: - 中心点向量
+        List: -  list of centers 中心点向量
     """
     center_index = sample(range(len(dataset)), k)
     data = [{"data": vec,
@@ -23,31 +23,31 @@ def _init_centers(dataset, k):
 
 
 def _calcul_center(dataset):
-    """计算一组向量的中心,实际就是计算向量各个维度的均值
+    """Caculation of the center of a group of data points 计算一组向量的中心,实际就是计算向量各个维度的均值
 
     Parameters:
-        dataset (Iterable): - 由向量组成的序列
+        dataset (Iterable): - list of data points 由向量组成的序列
     Returns:
-        List: - 中心点向量
+        List: - center 中心点向量
     """
     n = len(list(dataset))
     return list(sum(np.array(i) for i in dataset) / n)
 
 
 def _k_means_iter(data, center, last_center=None, count=0, *, maxite=10, distance_func=euclidean_distance, **kws):
-    """k-means的计算迭代器,使用递归的方式编写
+    """iterative way of implementing Lloyd k-means的计算迭代器,使用递归的方式编写
 
     Parameters:
-        data (Iterable): - 带标签数据集,格式为[{"data":xxx,"label":xxx},...]
-        center (Iterable): - 中心位置,格式为[{"data":xxx,"label":xxx},...]
-        last_center (Iterable): - 上一次的中心位置,格式为[{"data":xxx,"label":xxx},...]
-        count (int): - 计数器,用于维护迭代次数
-        maxite (int): - 最大迭代次数
-        distance_func (Function): - 计算距离的函数
-        **kws : - 距离函数的其他参数
+        data (Iterable): - dataset after clustering in form of [{"data":xxx,"label":xxx},...]  带标签数据集,格式为[{"data":xxx,"label":xxx},...]
+        center (Iterable): - centers in form of [{"data":xxx,"label":xxx},...] 中心位置,格式为[{"data":xxx,"label":xxx},...]
+        last_center (Iterable): - centers of last iteration and in form of [{"data":xxx,"label":xxx},...]  上一次的中心位置,格式为[{"data":xxx,"label":xxx},...]
+        count (int): - compter of number of iteration 计数器,用于维护迭代次数
+        maxite (int): - maximum of iteration 最大迭代次数
+        distance_func (Function): - distance function 距离函数
+        **kws : - other parameters of distance function 距离函数的其他参数
 
     Returns:
-        List: - 打好标签的数据集
+        List: - clustered/labelled dataset 打好标签的数据集
     """
     if count >= maxite or (
             last_center is not None and sum([distance_func(x["data"], y["data"], **kws) for x, y in zip(center, last_center)]) <= 0.001):

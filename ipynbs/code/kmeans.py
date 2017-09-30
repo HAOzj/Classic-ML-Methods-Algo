@@ -5,7 +5,7 @@ from itertools import groupby
 
 
 def _init_centers(dataset, k):
-    """Initilisation of K centres by picking k points in dataset at random 初始化中心点,随机抽取k个点作为中心
+    """Initialization of K centres by picking k points in dataset at random 初始化中心点,随机抽取k个点作为中心
 
     Parameters:
         dataset (Iterable): - sequence of data points 由向量组成的序列
@@ -34,8 +34,8 @@ def _calcul_center(dataset):
     return list(sum(np.array(i) for i in dataset) / n)
 
 
-def _k_means_iter(data, center, last_center=None, count=0, *, maxite=10, distance_func=euclidean_distance, **kws):
-    """iterative way of implementing Lloyd k-means的计算迭代器,使用递归的方式编写
+def _k_means_recur(data, center, last_center=None, count=0, *, maxite=10, distance_func=euclidean_distance, **kws):
+    """recursion of Lloyd Lloyd的迭代
 
     Parameters:
         data (Iterable): - clustered dataset in form of [{"data":xxx,"label":xxx},...]  带标签数据集,格式为[{"data":xxx,"label":xxx},...]
@@ -71,7 +71,7 @@ def _k_means_iter(data, center, last_center=None, count=0, *, maxite=10, distanc
                 "label": i,
                 "data": temp
             })
-        return _k_means_iter(data, center, last_center, count=count + 1, maxite=maxite, distance_func=distance_func, **kws)
+        return _k_means_recur(data, center, last_center, count=count + 1, maxite=maxite, distance_func=distance_func, **kws)
 
 
 def k_means(dataset, k, *, maxite=10, distance_func=euclidean_distance, **kws):
@@ -89,7 +89,7 @@ def k_means(dataset, k, *, maxite=10, distance_func=euclidean_distance, **kws):
 
     """
     data, center = _init_centers(dataset, k)
-    return _k_means_iter(data, center, maxite=maxite, distance_func=distance_func, **kws)
+    return _k_means_recur(data, center, maxite=maxite, distance_func=distance_func, **kws)
 
 
 def main():

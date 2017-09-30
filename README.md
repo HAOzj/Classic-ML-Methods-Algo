@@ -50,10 +50,8 @@
     + 朴素贝叶斯分类器(Naive Bayes Classifier)
     + 决策树(Decision Tree)
     + 随机森林(Random Forest)
-    + 最小二乘法回归
     + 逻辑回归(Logistics Regression)
     + 支持向量机(SVM,Support Vector Machine)
-    + 协同过滤(Collaborative Filtering)
     
 + 关联规则
     + A Priori关联规则

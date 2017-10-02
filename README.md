@@ -46,12 +46,14 @@
     + 高斯混合模型(GMM，Gaussian Mixture Model)
     
 + 有监督
-    + KNN(K Nearest Neighbors）
     + 朴素贝叶斯分类器(Naive Bayes Classifier)
+    + 感知机(Perceptron)
+    + 支持向量机(SVM,Support Vector Machine)
+    + 逻辑回归(Logistics Regression)
+    + KNN(K Nearest Neighbors）
     + 决策树(Decision Tree)
     + 随机森林(Random Forest)
-    + 逻辑回归(Logistics Regression)
-    + 支持向量机(SVM,Support Vector Machine)
+
     
 + 关联规则
     + A Priori关联规则

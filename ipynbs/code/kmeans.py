@@ -2,7 +2,7 @@ import numpy as np
 from random import sample, randint
 from metric import euclidean_distance
 from itertools import groupby
-
+from matplotlib import pyplot as plt
 
 def _init_centers(dataset, k):
     """Initialization of K centres by picking k points in dataset at random 初始化中心点,随机抽取k个点作为中心
@@ -91,7 +91,27 @@ def k_means(dataset, k, *, maxite=10, distance_func=euclidean_distance, **kws):
     data, center = _init_centers(dataset, k)
     return _k_means_recur(data, center, maxite=maxite, distance_func=distance_func, **kws)
 
-
+def draw_2d(Dataset,k,d,Center,Label):
+    """function to plot dataset colorized according to their cluster if data points are 2-dimentional,
+    Parameters:
+        Dataset (Iterable): - sequence of data points who are also a list of numbers
+        k (int): - number of clusters
+        d (int): - dimension of data points
+        Center (Iterable): - centers in form of [{"data":xxx,"label":xxx},...] 中心位置,格式为[{"data":xxx,"label":xxx},...]
+        Label(Iterable):- list of labels of n points
+    """
+    colors = cm.rainbow(np.linspace(0, 1, k))
+    n = len(Dataset)
+    if(d == 2):
+        Color = ['b', 'g', 'r', 'c', 'm', 'y', 'k', 'w']
+        Colors = [Color[i] for i in Label]
+        for i in range(n):
+            plt.scatter(Dataset[i][0], Dataset[i][1], color=Colors[i])
+        for i in range(k):
+            plt.scatter(Center[i][0], Center[i][1],
+                        color=Color[i], marker='D')
+        plt.show()
+	
 def main():
     a = [2, 2]
     b = [1, 2]

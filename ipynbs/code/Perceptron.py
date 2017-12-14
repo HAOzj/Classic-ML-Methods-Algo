@@ -100,7 +100,7 @@ def draw_2d(Dataset,d, w, t):
         plt.savefig('%dth update'%t)
         plt.close()
 		
-def perceptron(Dataset, d, method ="zero"):
+def perceptron(Dataset, d, method ="zero", max_epoches = 5):
     """implementation of Perceptron algo and save plots of every updating
     Parameters :
         Dataset(Iterable):- labeled data points with 1 at dth dimension and label at d+1th dimension
@@ -113,15 +113,16 @@ def perceptron(Dataset, d, method ="zero"):
     w,t = _init_weight(Dataset, d, method)
     draw_2d(Dataset, d, w, t)
     n = len(Dataset)
-    for i in range(n):
-        if(len(Dataset[i]) != d+1):
-            print(i+1,"th data points is not of ", d," dimensions")
-        else:
-            last_t =t
-            last_w = w
-            w,t = _update_weights(Dataset[i], d,last_w,last_t)
-        if(t != last_t):
-            draw_2d(Dataset, d, w, t)
+    for epoch in range(max_epoches) :
+        for i in range(n):
+            if(len(Dataset[i]) != d+1):
+                print(i+1,"th data points is not of ", d," dimensions")
+            else:
+                last_t =t
+                last_w = w
+                w,t = _update_weights(Dataset[i], d,last_w,last_t)
+            if(t != last_t):
+                draw_2d(Dataset, d, w, t)
     return(w,t)
 
 

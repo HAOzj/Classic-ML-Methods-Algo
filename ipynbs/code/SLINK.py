@@ -112,7 +112,12 @@ def SLINK(Dataset, d):
         Dataset(List) : - list of data points, who are also lists
         d(int) : - dimension of data points
     Returns : 
-        List: - pointer representations of dendrograms noting the lowest level at which i is no longer the last point in his cluster and the last point in the cluster which i then joins
+        res(Iterables) : - list of triples sorted by the second element, 
+			   first element is index of point, 
+			   the other two are pointer representations of dendrograms noting the 
+        		   lowest level at which i is no longer the last point in his cluster and 
+			   the last point in the cluster which i then joins
+	Heights(Iterables) : - list of the second element of res' triples
     """
     n = len(Dataset)
     A = [inf for i  in range(n)]
@@ -138,7 +143,39 @@ def SLINK(Dataset, d):
         for i in range(k):
             if(A[i] >= A[B[i]]):
                 B[i] = k 
-    return(A,B)
+    res = [(index,i,j) for index,(i,j) in enumerate(zip(A,B))]
+    res = sorted(res, key = lambda x:x[1])
+    Heights = [ triple[1] for triple in res]
+    return(res, Heights)
+
+def display_from_SLINK(res, Heights):
+    '''function to display clustering layer by layer
+    
+    according to the pointer representations of dendrograms
+    
+    Parameters :
+        res(Iterables) : - list of triples sorted by the second element, 
+			   first element is index of point, 
+			   the other two are pointer representations of dendrograms noting the 
+        		   lowest level at which i is no longer the last point in his cluster and 
+			   the last point in the cluster which i then joins
+	Heights(Iterables) : - list of the second element of res' triples
+    '''
+    num_points = len(Heights)
+    Clustering = [[i] for i in range(num_points)]
+    i = 0
+    j = 0
+    k = 0
+    while i< num_points-1:
+        # one layer clustering
+        i = j
+        k += 1
+        print(k,'th 合并')
+        while j<num_points-1 and Heights[j] == Heights[i]:
+            Clustering[ res[j][2]] += Clustering[ res[j][0]]
+            print(Clustering[ res[j][2]])
+            j += 1
+   
 '''
 
 ## main function
@@ -150,5 +187,6 @@ e =[3,2]
 Dataset = [a,b,c,d,e]
 Dataset.append([1.5,0])
 Dataset.append([3,4])
-# res = SLINK(Dataset,2)
-res =SLINK_recur(Dataset)
+res, Heights = SLINK(Dataset,2)
+#res =SLINK_recur(Dataset)
+display_from_SLINK(res, Heights)

@@ -1,6 +1,6 @@
 import numpy as np
 from random import sample, randint
-from metric import euclidean_distance
+from .metric import euclidean_distance
 from itertools import groupby
 from matplotlib import pyplot as plt
 

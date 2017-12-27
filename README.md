@@ -50,6 +50,7 @@
     + K-means方法(主要是Lloyd算法)
     + 层次聚类方法(Hierarchical Clustering)
     + 高斯混合模型(GMM，Gaussian Mixture Model)
+    + 受限玻尔兹曼机(RBM, Restricted Boltzmann Machine)
     
 + 有监督
     + 朴素贝叶斯分类器(Naive Bayes Classifier)
@@ -94,7 +95,7 @@
     + 基于贪婪算法的 grid search 改进
     + 基于动态规划的 grid search 改进
 
-+ 模型组合
++ 模型集成
     + bagging
     + boosting 
 

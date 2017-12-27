@@ -6,14 +6,12 @@ updated on the 20th Sep
 
 @author: Zhaojun
 """
-
-
 import sys
 import numpy as np
 import math
 
 
-def Naive_Bayes(Trainset, dim,last_N={}, last_Y=[]) :
+def Naive_Bayes(Trainset, dim, last_N={}, last_Y=[]):
     """Function to execute Naive Bayes Classifier
     Parameters : 
         Trainset(Iterable):- training set with categorical variables at d+1th dimension 
@@ -25,13 +23,13 @@ def Naive_Bayes(Trainset, dim,last_N={}, last_Y=[]) :
     """
     n = len(Trainset)
     last_k = len(last_Y)
-    if( set(last_N.keys() ) != set(last_Y)): 
+    if(set(last_N.keys()) != set(last_Y)):
         print('last_N and last_Y are inconsistant')
         exit()
 
-    for i in range(0,n):
-        if( len(Trainset[i]) != dim+1 ):
-            print("%d th sample is not of %d dimensions"%(i+1, dim))
+    for i in range(0, n):
+        if(len(Trainset[i]) != dim + 1):
+            print("%d th sample is not of %d dimensions" % (i + 1, dim))
             exit()
         if(Trainset[i][dim] not in Y):
             Y.append(Trainset[i][dim])
@@ -39,20 +37,21 @@ def Naive_Bayes(Trainset, dim,last_N={}, last_Y=[]) :
     # k is the number of classes
     k = len(Y)
 
-    for i in range(last_k,k):
-        N[Y[i]] =  [{} for d in range(dim)]
+    for i in range(last_k, k):
+        N[Y[i]] = [{} for d in range(dim)]
         N[Y[i]].append(0)
 
     for data in Trainset:
         y = data[dim]
-        N[ y][dim] += 1
+        N[y][dim] += 1
         for d in range(dim):
             if(data[d] not in N[y][d].keys()):
-                N[y][d][ data[d] ] =0
-            N[y][d][ data[d] ] +=1
+                N[y][d][data[d]] = 0
+            N[y][d][data[d]] += 1
     return(N)
 
-def Naive_Predict(X,N,dim):
+
+def Naive_Predict(X, N, dim):
     """
     Function to predict class based on the acquired Naive Bayes model
     Parameters : 
@@ -63,23 +62,24 @@ def Naive_Predict(X,N,dim):
         probabilities(Iterable):- list of probabilities, probabilities[i][y] represents the probability of ith data belonging to class y
     """
     probabilities = []
-    for i in range( len(X)):
+    for i in range(len(X)):
         probabilities.append({})
         data = X[i]
         if(len(data) != dim):
-            print('%d th data is not of %d dimensions'%(i+1, dim))
+            print('%d th data is not of %d dimensions' % (i + 1, dim))
             exit()
         for y in N.keys():
             for d in range(dim):
                 if(data[d] not in N[y][d].keys()):
-                    print('the {0}th variable of {1}th data, {2}, is new to class {3}'.format(d+1,i+1,data[d],y) )
+                    print('the {0}th variable of {1}th data, {2}, is new to class {3}'.format(
+                        d + 1, i + 1, data[d], y))
                     probabilities[i][y] = 0
-                else :
-                    probabilities[i][y] *= N[y][d][ data[d] ]/N[y][dim]
+                else:
+                    probabilities[i][y] *= N[y][d][data[d]] / N[y][dim]
     return(probabilities)
 
 
-def Gaussian_Bayes( Trainset, dim,  last_N = {}, last_Y=[]) :
+def Gaussian_Bayes(Trainset, dim,  last_N={}, last_Y=[]):
     """Function to execute Gaussian Naive Bayes
     Parameters : 
 
@@ -94,13 +94,13 @@ def Gaussian_Bayes( Trainset, dim,  last_N = {}, last_Y=[]) :
     n = len(Trainset)
     last_k = len(last_Y)
 
-    if( set(last_N.keys()) != set(last_Y)): 
+    if(set(last_N.keys()) != set(last_Y)):
         print('last_N and last_Y are inconsistant')
         exit()
 
-    for i in range(0,n):
-        if( len(Trainset[i]) != dim+1):
-            print("%d th sample is not of %d dimensions"%(i+1, dim))
+    for i in range(0, n):
+        if(len(Trainset[i]) != dim + 1):
+            print("%d th sample is not of %d dimensions" % (i + 1, dim))
             exit()
         if(Trainset[i][dim] not in Y):
             Y.append(Trainset[i][dim])
@@ -108,13 +108,14 @@ def Gaussian_Bayes( Trainset, dim,  last_N = {}, last_Y=[]) :
     # k is the number of classes
     k = len(Y)
 
-    for i in range(last_k,k):
-        N[Y[i] ] =[ [] for d in range(dim)]
+    for i in range(last_k, k):
+        N[Y[i]] = [[] for d in range(dim)]
 
     for data in Trainset:
         for d in range(dim):
-            N[ data[dim] ] [d].append(data[d])
+            N[data[dim]][d].append(data[d])
     return(N)
+
 
 def normpdf(x, mu, sigma):
     """
@@ -127,20 +128,21 @@ def normpdf(x, mu, sigma):
         float:- probability density function of normal distribution at x point
     """
     if(sigma == 0):
-        sigma =float('inf')
-    try :
+        sigma = float('inf')
+    try:
         sigma = float(sigma)
         x = float(x)
         mu = float(mu)
     except ValueError:
         print('x, mu or sigma are not all numeric')
         exit()
-    else :
-        denom = (2* math.pi)**.5 * sigma
-        num = math.exp(-(float(x)-float(mu))**2/(2* sigma**2 ))
-        return(num/denom)
-	
-def Gaussian_Predict(X,N,dim):
+    else:
+        denom = (2 * math.pi)**.5 * sigma
+        num = math.exp(-(float(x) - float(mu))**2 / (2 * sigma**2))
+        return(num / denom)
+
+
+def Gaussian_Predict(X, N, dim):
     """
     Function to predict class based on the acquired Naive Bayes model
     Parameters : 
@@ -155,17 +157,17 @@ def Gaussian_Predict(X,N,dim):
     try:
         for y in N.keys():
             for d in range(dim):
-                N[y][d] = [np.mean(N[y][d]), np.std(N[y][d]) ]
+                N[y][d] = [np.mean(N[y][d]), np.std(N[y][d])]
     except TypeError:
         print('Type of some data in N is wrong')
-    except :
-        print('Unexpected error:',sys.exc_info()[0])
-    else :
-        for i in range( len(X)):
+    except:
+        print('Unexpected error:', sys.exc_info()[0])
+    else:
+        for i in range(len(X)):
             probabilities.append({})
             x = X[i]
             if(len(x) != dim):
-                print('%d th data is not of %d dimensions'%(i+1, dim))
+                print('%d th data is not of %d dimensions' % (i + 1, dim))
                 exit()
             for y in N.keys():
                 probabilities[i][y] = 1

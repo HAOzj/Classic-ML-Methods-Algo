@@ -44,7 +44,7 @@
 
 ## 本项目编排
 
-该项目按照以上分类方式,分为三个章节.每一章节中会有典型方法和典型应用场景,其中关联法则在诞生时属于非监督学习，用来发现物品之间有趣的关联,也就是模式（pattern）,后来我们也发展出了它作为分类器的应用,属于监督学习的场景.涉及到的方法有:
+该项目按照以上分类方式,分为三个章节.每一章节中会有典型方法和典型应用场景,其中关联法则在诞生时属于非监督学习，用来发现物品之间有趣的关联,也就是模式(pattern),后来我们也发展出了它作为分类器的应用,属于监督学习的场景.涉及到的方法有:
 
 + 无监督
     + K-means方法(主要是Lloyd算法)
@@ -53,17 +53,23 @@
     + 受限玻尔兹曼机(RBM, Restricted Boltzmann Machine)
     
 + 有监督
-    + 朴素贝叶斯分类器(Naive Bayes Classifier)
-    + 感知机(Perceptron)
-    + 支持向量机(SVM,Support Vector Machine)
-    + 逻辑回归(Logistics Regression)
-    + KNN(K Nearest Neighbors）
     + 决策树(Decision Tree)
-    + 随机森林(Random Forest)
+    + 最近邻(K Nearest Neighbors)
+    + 高斯过程(Gaussian Process)
+    + 朴素贝叶斯分类器(Naive Bayes Classifier)
+    + 线性回归(Linear Regression)
+    + 逻辑回归(Logistics Regression)
+    + 感知器(Perceptron)
+    + 支持向量机(SVM,Support Vector Machine)  
 
 + 关联规则
     + A Priori关联规则
     + FP Growth(Frequent Pattern Growth)关联规则
+
++ 半监督
+    + 标签传递法
+    + 标签扩散法
+
 
 所有方法/算法的介绍都按照以上三个分类,放在ipynb文件夹下相应的文件夹里,代码实现放在code文件夹里.
 
@@ -83,21 +89,28 @@
     + 数据平滑化
     + 特征提取
     + 特征组合
-    + 特征降维
+    + 特征升降维
 
 + 模型评价
     + 分类模型评估
     + 回归模型评估
     + 聚类模型评估
 
-+ 超参选择
-    + grid search
-    + 基于贪婪算法的 grid search 改进
-    + 基于动态规划的 grid search 改进
++ 超参优化
+    + Grid Search
+    + Randomized Search
+
++ 模型验证
+    + 交叉验证
+    + 学习曲线
+    + 验证曲线
 
 + 模型集成
+    + voting
     + bagging
     + boosting 
+
++ 增量学习
 
 + 机器学习中的常见问题
     + 数据不平衡
@@ -116,7 +129,6 @@
     + 线性优化
     + 非线性优化
     
-
 
 全文并不基于某种语言或者工具,而是希望讲解其中的原理.
 

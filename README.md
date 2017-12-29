@@ -51,22 +51,22 @@
 + 无监督
     + K-means方法(主要是Lloyd算法)
     + 层次聚类方法(Hierarchical Clustering)
-    + 高斯混合模型(GMM，Gaussian Mixture Model)
-    + 受限玻尔兹曼机(RBM, Restricted Boltzmann Machine)
+    + 高斯混合模型(GMM，Gaussian Mixture Model)x
+    + 受限玻尔兹曼机(RBM, Restricted Boltzmann Machine)x
     
 + 有监督
-    + 决策树(Decision Tree)
-    + 最近邻(K Nearest Neighbors)
-    + 高斯过程(Gaussian Process)
+    + 决策树(Decision Tree)x
+    + 最近邻(K Nearest Neighbors)x
+    + 高斯过程(Gaussian Process)x
     + 朴素贝叶斯分类器(Naive Bayes Classifier)
-    + 线性回归(Linear Regression)
-    + 逻辑回归(Logistics Regression)
+    + 线性回归(Linear Regression)x
+    + 逻辑回归(Logistics Regression)x
     + 感知器(Perceptron)
-    + 支持向量机(SVM,Support Vector Machine)  
+    + 支持向量机(SVM,Support Vector Machine)x
 
 + 关联规则
-    + A Priori关联规则
-    + FP Growth(Frequent Pattern Growth)关联规则
+    + A Priori关联规则x
+    + FP Growth(Frequent Pattern Growth)关联规则x
 
 所有方法/算法的介绍都按照以上三个分类,放在ipynb文件夹下相应的文件夹里,代码实现放在code文件夹里.
 
@@ -79,60 +79,64 @@
 
 + 数据预处理
     + 归一化
-    + 白化
-    + 数据增强
-    + 连续数据离散化
-    + 离散数据向量化
-    + 数据平滑化
-    + 特征提取
-    + 特征组合
-    + 特征升降维
+    + 白化x
+    + 数据增强x
+    + 连续数据离散化x
+    + 离散数据向量化x
+    + 数据平滑化x
+    + 特征提取x
+    + 特征组合x
+    + 特征升降维x
 
 + 模型评价
     + 分类模型评估
-    + 回归模型评估
+    + 回归模型评估x
     + 聚类模型评估
 
 + 超参优化
-    + Grid Search
-    + Randomized Search
+    + Grid Searchx
+    + Randomized Searchx
 
 + 模型验证
-    + 交叉验证
-    + 学习曲线
-    + 验证曲线
+    + 交叉验证x
+    + 学习曲线x
+    + 验证曲线x
 
 + 模型集成
     + voting
     + bagging
-    + boosting 
-
-+ 增量学习
+    + boosting
 
 + 半监督
-    + 标签传递法
-    + 标签扩散法
+    + 标签传递法x
+    + 标签扩散法x
 
 + 强化学习
+
++ sklearn的常见问题
+    + sklearn模型序列化
+    + sklearn构建管道x
+    + sklearn处理超大规模数据x
 
 + 机器学习中的常见问题
     + 如何选择使用什么模型
     + 数据不平衡怎么办
+    + 二分类,多分类问题
     + 如何处理过拟合的问题
     + 如何避免纬度灾难
 
-+ 机器学习中概念术语整理(江湖春典)
++ 机器学习中概念术语整理
 
 + 背景知识
-    + 决策论基础
-    + 信息论基础
-    + 图论基础
-    + 概率分布
+    + 决策论基础x
+    + 信息论基础x
+    + 图论基础x
+    + 概率分布x
     + 贝叶斯方法
     + 距离度量
-    + 凸优化
-    + 启发式优化
-    
+    + 凸优化x
+    + 启发式优化x
+
 
 全文并不基于某种语言或者工具,而是希望讲解其中的原理.
 

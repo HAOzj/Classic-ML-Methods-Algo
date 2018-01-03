@@ -110,7 +110,7 @@
 
 + sklearn的常见问题
     + sklearn模型序列化
-    + sklearn构建管道x
+    + sklearn构建管道
     + sklearn处理超大规模数据
 
 + 机器学习中的常见问题

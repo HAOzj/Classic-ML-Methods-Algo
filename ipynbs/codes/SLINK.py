@@ -10,11 +10,11 @@ inf = float('inf')
 
 def metrics(a, b, met='euclidean'):
     """definition of distance between numeric data points
-    parameters :
-        a,b(Iterator)  : - two points to compare
-        metric(string) : - used metric, "euclidean", "squared", "manhattan" or "max"
-    Return  :
-        distance(float) : - distance between two numeric points
+    Args:
+        a,b(Iterator)  :- two points to compare
+        metric(string) :- used metric, "euclidean", "squared", "manhattan" or "max"
+    Returns:
+        distance(float) :- distance between two numeric points
     """
     try:
         if(len(a) != len(b)):
@@ -51,13 +51,13 @@ def _init():
 def _SLINK_recur(Dataset, A=None, B=None, dist=metrics, **kws):
     """recursion of SLINK
 
-    Parameters:
-        Dataset (Iterable): - dataset
-        A(Iterable), B(Iterable) : - pointer representations of the dendrogram of the first k elements
-        dist(Function) :- used metric
-        **kws : - other parameters of metric function
-    Returns :
-        List: - pointer representations of dendrogram of the first k+1 elements with A noting the lowest level at which i is no longer the last point in his cluster and B storing the last point in the cluster which i then joins
+    Args:
+        Dataset (Iterables) :- dataset
+        A(Iterables), B(Iterables) :- pointer representations of the dendrogram of the first k elements
+        dist(func) :- used metric
+        **kws(dict) :- other parameters of metric function
+    Returns:
+        List, pointer representations of dendrogram of the first k+1 elements with A noting the lowest level at which i is no longer the last point in his cluster and B storing the last point in the cluster which i then joins
 
 
     Returns:
@@ -114,20 +114,18 @@ def _SLINK_recur(Dataset, A=None, B=None, dist=metrics, **kws):
 def SLINK(Dataset, d):
     """function to execute SLINK algo
 
+    Args:
+        Dataset(List) :- list of data points, who are also lists
+        d(int) :- dimension of data points
 
-    Parameters :
-        Dataset(List) : - list of data points, who are also lists
-        d(int) : - dimension of data points
+    Returns:
+        res(Iterables) :- list of triples sorted by the second element,
+                        first element is index of point,
+                        the other two are pointer representations of dendrograms noting the
+                        lowest level at which i is no longer the last point in his cluster and
+                        the last point in the cluster which i then joins
 
-
-    Returns :
-        res(Iterables) : - list of triples sorted by the second element,\
-        first element is index of point,\
-        the other two are pointer representations of dendrograms noting the\
-        lowest level at which i is no longer the last point in his cluster and\
-        the last point in the cluster which i then joins\
-
-        Heights(Iterables) : - list of the second element of res' triples
+        Heights(Iterables) :- list of the second element of res' triples
     """
     n = len(Dataset)
     A = [inf for i in range(n)]
@@ -164,14 +162,14 @@ def display_from_SLINK(res, Heights):
 
     according to the pointer representations of dendrograms
 
-    Parameters :
-        res(Iterables) : - list of triples sorted by the second element,\
-            first element is index of point,\
-            the other two are pointer representations of dendrograms noting the\
-            lowest level at which i is no longer the last point in his cluster and\
-            the last point in the cluster which i then joins
+    Args:
+        res(Iterables) :- list of triples sorted by the second element,
+                        first element is index of point,
+                        the other two are pointer representations of dendrograms noting the
+                        lowest level at which i is no longer the last point in his cluster and
+                        the last point in the cluster which i then joins
 
-        Heights(Iterables) : - list of the second element of res' triples
+        Heights(Iterables) :- list of the second element of res' triples
     '''
     num_points = len(Heights)
     Clustering = [[i] for i in range(num_points)]

@@ -1,17 +1,28 @@
+# -*- coding: utf-8 -*-
+"""
+Created on 27 Feb 2016
+
+@author: woshihaozhaojun@sina.com
+"""
 import numpy as np
 from random import sample, randint
 from .metric import euclidean_distance
 from itertools import groupby
 from matplotlib import pyplot as plt
+from matplotlib import cm
 
 def _init_centers(dataset, k):
-    """Initialization of K centres by picking k points in dataset at random 初始化中心点,随机抽取k个点作为中心
+    """Initialization of K centres by picking k points in dataset at random 
+    初始化中心点,随机抽取k个点作为中心
 
-    Parameters:
-        dataset (Iterable): - sequence of data points 由向量组成的序列
-        k (int): - given number of clusters 指定的簇数量
+    Args:
+        dataset(iterable): - sequence of data points 
+                                    由向量组成的序列
+        k(int): - given number of clusters 
+                       指定的簇数量
     Returns:
-        List: - list of data points after partial labelling in initialization, list of centers 初始化后部分带标签的数据点列表,中心列表
+        List: - list of data points after partial labelling in initialization, list of centers 
+                    初始化后部分带标签的数据点列表,中心列表
     """
     center_index = sample(range(len(dataset)), k)
     data = [{"data": vec,
@@ -25,10 +36,10 @@ def _init_centers(dataset, k):
 def _calcul_center(dataset):
     """Caculation of the center of a group of data points 计算一组向量的中心,实际就是计算向量各个维度的均值
 
-    Parameters:
-        dataset (Iterable): - list of data points 由向量组成的序列
+    Args:
+        dataset(iterable) :- list of data points 由向量组成的序列
     Returns:
-        List: - center 中心点向量
+        List, center 中心点向量
     """
     n = len(list(dataset))
     return list(sum(np.array(i) for i in dataset) / n)
@@ -37,17 +48,24 @@ def _calcul_center(dataset):
 def _k_means_recur(data, center, last_center=None, count=0, *, maxite=10, distance_func=euclidean_distance, **kws):
     """recursion of Lloyd Lloyd的迭代
 
-    Parameters:
-        data (Iterable): - clustered dataset in form of [{"data":xxx,"label":xxx},...]  带标签数据集,格式为[{"data":xxx,"label":xxx},...]
-        center (Iterable): - centers in form of [{"data":xxx,"label":xxx},...] 中心位置,格式为[{"data":xxx,"label":xxx},...]
-        last_center (Iterable): - centers of last iteration and in form of [{"data":xxx,"label":xxx},...]  上一次的中心位置,格式为[{"data":xxx,"label":xxx},...]
-        count (int): - compter of number of iteration 计数器,用于维护迭代次数
-        maxite (int): - maximum of iteration 最大迭代次数
-        distance_func (Function): - distance function 距离函数
-        **kws : - other parameters of distance function 距离函数的其他参数
+    Args:
+        data(Iterable): - clustered dataset in form of [{"data":xxx,"label":xxx},...]  
+                                   带标签数据集,格式为[{"data":xxx,"label":xxx},...]
+        center (Iterable): - centers in form of [{"data":xxx,"label":xxx},...] 
+                                    中心位置,格式为[{"data":xxx,"label":xxx},...]
+        last_center (Iterable): - centers of last iteration and in form of [{"data":xxx,"label":xxx},...]  
+                                            上一次的中心位置,格式为[{"data":xxx,"label":xxx},...]
+        count (int): - compter of number of iteration 
+                            计数器,用于维护迭代次数
+        maxite (int): - maximum of iteration 
+                            最大迭代次数
+        distance_func(func): - distance function 
+                                        距离函数
+        **kws(key argument) :- other parameters of distance function 
+                                        距离函数的其他参数
 
     Returns:
-        List: - clustered/labelled dataset 打好标签的数据集
+        List :- clustered/labelled dataset 打好标签的数据集
     """
     if count >= maxite or (
             last_center is not None and sum([distance_func(x["data"], y["data"], **kws) for x, y in zip(center, last_center)]) <= 0.001):
@@ -78,40 +96,46 @@ def k_means(dataset, k, *, maxite=10, distance_func=euclidean_distance, **kws):
     """function to perform Lloyd algorithm. If data points are 2-dimentional,
     it will plot all the points colorized according to their cluster
 
-    Parameters:
-        dataset (Iterable): - sequence of data points who are also a list of numbers
-        k (int): - number of clusters
-        d (int): - dimension of data points
-        maxite (int): - maximum of iterations
+    Args:
+        dataset(iterable) :- sequence of data points who are also a list of numbers
+        k(int) :- number of clusters
+        d(int) :- dimension of data points
+        maxite(int) :- maximum of iterations
 
     Returns:
         List: - list of centers of k clusters, list of labels of n points
 
     """
     data, center = _init_centers(dataset, k)
-    return _k_means_recur(data, center, maxite=maxite, distance_func=distance_func, **kws)
+    ds_clustered = _k_means_recur(data, center, maxite=maxite, distance_func=distance_func, **kws)
+    label_set = list(set([datum["label"] for datum in ds_clustered]))
+    for datum in ds_clustered:
+        datum["label"] = label_set.index(datum["label"])
+    return ds_clustered
+    
 
-def draw_2d(Dataset,k,d,Center,Label):
-    """function to plot dataset colorized according to their cluster if data points are 2-dimentional,
-    Parameters:
-        Dataset (Iterable): - sequence of data points who are also a list of numbers
-        k (int): - number of clusters
-        d (int): - dimension of data points
-        Center (Iterable): - centers in form of [{"data":xxx,"label":xxx},...] 中心位置,格式为[{"data":xxx,"label":xxx},...]
-        Label(Iterable):- list of labels of n points
+
+def draw_2d(ds_clustered):
+    """function to plot dataset colorized according to their cluster
+    
+    Args:
+        ds_clustered(iterable) :- sequence of data points, in form of {"data": array-like, "label": int}
     """
-    colors = cm.rainbow(np.linspace(0, 1, k))
-    n = len(Dataset)
-    if(d == 2):
-        Color = ['b', 'g', 'r', 'c', 'm', 'y', 'k', 'w']
-        Colors = [Color[i] for i in Label]
-        for i in range(n):
-            plt.scatter(Dataset[i][0], Dataset[i][1], color=Colors[i])
-        for i in range(k):
-            plt.scatter(Center[i][0], Center[i][1],
-                        color=Color[i], marker='D')
-        plt.show()
-	
+    labels = [datum["label"] for datum in ds_clustered]
+    label_set = list(set(labels))
+    k = len(label_set)
+    color_option = cm.rainbow(np.linspace(0, 1, k))
+    
+    for datum in ds_clustered:
+        coor = datum["data"]
+        try:
+            assert(len(coor) >= 2)
+        except AssertionError:
+            raise("data points must be 2-dimensional or with higher dimensionality")
+        plt.scatter(coor[0], coor[1], color=color_option[datum["label"]])
+    plt.show()
+
+        
 def main():
     a = [2, 2]
     b = [1, 2]
@@ -121,8 +145,7 @@ def main():
     dataset = [a, b, c, d, f]
     dataset.append([1.5, 0])
     dataset.append([3, 4])
-    res = k_means(dataset, 2)
-    return res
+    return k_means(dataset, 2)
 
 
 if __name__ == '__main__':

@@ -24,11 +24,17 @@ def mean_absolute_percent_error(y_true, y_pred, sample_weight=None):
     y_pred = np.array(y_pred)
     y_true.reshape(-1,)
     y_pred.reshape(-1,)
+    
+    try: 
+        assert all(y_true != 0)
+    except AssertionError:
+        raise ValueError("y_true中不能有0")
 
     try:
         assert y_true.shape == y_pred.shape
     except AssertionError:
-        print("y_true和y_pred的维度必需一致")
+        raise ValueError("y_true和y_pred的维度必需一致")
+        
     if not sample_weight:
         sample_weight = np.array([1 for _ in range(y_true.shape[0])])
 

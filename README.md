@@ -51,7 +51,7 @@
 + 无监督
     + K-means方法(主要是Lloyd算法)
     + 层次聚类方法(Hierarchical Clustering)
-    + 高斯混合模型(GMM，Gaussian Mixture Model)x
+    + 高斯混合模型(GMM，Gaussian Mixture Model)
     + 受限玻尔兹曼机(RBM, Restricted Boltzmann Machine)x
     
 + 有监督

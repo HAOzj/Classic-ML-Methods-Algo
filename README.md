@@ -76,30 +76,29 @@
 同时在附录中会包含内容:
 
 + 数据抽样
-
-+ 交叉验证
+    + MCMC采样方法
 
 + 数据预处理
-    + 归一化
-    + PCA及白化x
-    + 数据增强
+    + 异常值检测  
+    + 标准化,归一化,中心化
     + 离散数据编码
+    + PCA及白化x
+    + 数据增强x
     + 特征提取x
     + 特征选择x
 
 + 模型评价
-    + 分类模型评估
-    + 回归模型评估
-    + 聚类模型评估
+    + 分类模型评估(classification metrics)
+    + 回归模型评估(regression metrics)
+    + 聚类模型评估(clustering metrics)
 
-+ 超参优化
++ 损失函数 
+    + 分类问题中MSE对比cross-entropy
 
 + 模型集成
     + voting
     + bagging
     + boosting
-
-+ 半监督学习
 
 + sklearn的常见问题
     + sklearn模型序列化
@@ -107,15 +106,20 @@
     + sklearn处理超大规模数据
 
 + 机器学习中的常见问题
+    + 欠拟合与过拟合(underfitting and overfitting)
+    + 半监督(semi-supervised)
+    + 超参数优化(hyperparameter optimization)
     + 如何选择使用什么模型
-    + 数据不平衡怎么办
-    + 如何处理过拟合的问题
+    + 参数优化(optimization)
+    + 数据不平衡(class imbalance)
+    + 交叉检验(cross validation)
 
-+ 机器学习中概念术语整理
++ 处理过拟合方法
+    + 数据集拆分(splitting)
+    + dropout  
 
-+ 背景知识
-    + 贝叶斯方法
-    + 距离度量
++ 一些基本概念
++ 距离度量
 
 
 

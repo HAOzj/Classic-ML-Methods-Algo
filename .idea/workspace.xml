@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f67534bc-cd11-4c9b-9d08-06664fa9b034" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ipynbs/appendix/BasicNotions.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ipynbs/appendix/loss_function/MSE vs Cross-entropy.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ipynbs/appendix/model_evaluation/classification_metrics.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ipynbs/appendix/model_evaluation/regression_metrics.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ipynbs/appendix/model_evaluation/标准化_归一化_中心化.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ipynbs/appendix/model_evaluation/编码定类型变量.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ipynbs/appendix/preprocess/标准化_归一化_中心化.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ipynbs/appendix/preprocess/编码定类型变量.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ipynbs/appendix/topics_in_machine_learning/MCMC采样方法.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/ipynbs/appendix/sampling/MCMC采样方法.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ipynbs/appendix/topics_in_machine_learning/cross_validation.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/ipynbs/appendix/topics_in_machine_learning/cross_validation.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ipynbs/appendix/topics_in_machine_learning/数据集拆分(splitting).ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/ipynbs/appendix/deal_with_overfitting/数据集拆分(splitting).ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipynbs/appendix/model_evaluation/cross_validation.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/ipynbs/appendix/model_evaluation/cross_validation.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,8 +17,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="361">
-                <caret line="114" column="6" lean-forward="true" selection-start-line="114" selection-start-column="6" selection-end-line="114" selection-end-column="6" />
+              <first_editor relative-caret-position="89">
+                <caret line="93" column="28" selection-start-line="93" selection-start-column="28" selection-end-line="93" selection-end-column="28" />
               </first_editor>
               <second_editor />
             </state>
@@ -146,6 +135,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ipynbs/appendix/model_evaluation" />
       <recent name="$PROJECT_DIR$/ipynbs/appendix/topics_in_machine_learning" />
       <recent name="$PROJECT_DIR$/ipynbs/appendix/deal_with_overfitting" />
       <recent name="$PROJECT_DIR$/ipynbs/appendix/sampling" />
@@ -173,12 +163,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582355606077</updated>
-      <workItem from="1582355607621" duration="1204000" />
+      <workItem from="1582355607621" duration="1528000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1204000" />
+    <option name="totallyTimeSpent" value="1528000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -221,8 +211,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="361">
-            <caret line="114" column="6" lean-forward="true" selection-start-line="114" selection-start-column="6" selection-end-line="114" selection-end-column="6" />
+          <first_editor relative-caret-position="89">
+            <caret line="93" column="28" selection-start-line="93" selection-start-column="28" selection-end-line="93" selection-end-column="28" />
           </first_editor>
           <second_editor />
         </state>

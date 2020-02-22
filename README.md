@@ -91,6 +91,7 @@
     + 分类模型评估(classification metrics)
     + 回归模型评估(regression metrics)
     + 聚类模型评估(clustering metrics)
+    + 交叉检验(cross validation)
 
 + 损失函数 
     + 分类问题中MSE对比cross-entropy
@@ -112,7 +113,7 @@
     + 如何选择使用什么模型
     + 参数优化(optimization)
     + 数据不平衡(class imbalance)
-    + 交叉检验(cross validation)
+    
 
 + 处理过拟合方法
     + 数据集拆分(splitting)

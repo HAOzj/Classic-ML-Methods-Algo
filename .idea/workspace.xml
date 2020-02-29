@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f67534bc-cd11-4c9b-9d08-06664fa9b034" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ipynbs/appendix/optimizer/illustration_optim.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ipynbs/appendix/deal_with_overfitting/dropout.py" beforeDir="false" afterPath="$PROJECT_DIR$/ipynbs/appendix/deal_with_overfitting/dropout.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipynbs/appendix/optimizer/illustration_optim.py" beforeDir="false" afterPath="$PROJECT_DIR$/ipynbs/appendix/optimizer/illustration_optim.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ipynbs/appendix/optimizer/illustration_optim.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="95" column="60" lean-forward="true" selection-start-line="95" selection-start-column="60" selection-end-line="95" selection-end-column="60" />
+            <state relative-caret-position="253">
+              <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -142,12 +139,12 @@
       <workItem from="1582440839092" duration="166000" />
       <workItem from="1582764679328" duration="211000" />
       <workItem from="1582815426043" duration="97000" />
-      <workItem from="1582948680734" duration="3453000" />
+      <workItem from="1582948680734" duration="3806000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6099000" />
+    <option name="totallyTimeSpent" value="6452000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -235,8 +232,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ipynbs/appendix/optimizer/illustration_optim.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="95" column="60" lean-forward="true" selection-start-line="95" selection-start-column="60" selection-end-line="95" selection-end-column="60" />
+        <state relative-caret-position="253">
+          <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>

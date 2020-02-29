@@ -24,8 +24,8 @@ class PlotComparaison(object):
         d2_{t+1} = - eta * dx2
 
     带Nesterov Momentum,
-        d1_{t+1} = - eta * dx1_{t+1} + mu * d1_t
-        d2_{t+1} = - eta * dx2_{t+1} + mu * d2_t
+        d1_{t+1} = eta * (mu * d1_t - dx1_{t+1})
+        d2_{t+1} = eta * (mu * d2_t - dx2_{t+1})
 
     RMSProp,
         w1_{t+1} = beta2 * w1_t + (1 - beta2) * dx1_t^2
@@ -179,8 +179,8 @@ class PlotComparaison(object):
 
     def forward_momentum(self):
         """带Momentum的SGD一次迭代"""
-        self.d1 = self.mu * self.dx1_pre - self.eta * self.dx1
-        self.d2 = self.mu * self.dx2_pre - self.eta * self.dx2
+        self.d1 = self.eta * (self.mu * self.dx1_pre - self.dx1)
+        self.d2 = self.eta * (self.mu * self.dx2_pre - self.dx2)
         self.ite += 1
         self.dx1_pre, self.dx2_pre = self.d1, self.d2
 

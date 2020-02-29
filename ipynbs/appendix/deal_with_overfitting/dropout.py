@@ -6,7 +6,6 @@ Created on 21 FEB, 2020
 @author: woshihaozhaojun@sina.com
 """
 import torch
-import copy
 import numpy as np
 
 

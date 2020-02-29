@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f67534bc-cd11-4c9b-9d08-06664fa9b034" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ipynbs/appendix/deal_with_overfitting/dropout.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ipynbs/appendix/optimizer/illustration_optim.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipynbs/appendix/deal_with_overfitting/dropout.py" beforeDir="false" afterPath="$PROJECT_DIR$/ipynbs/appendix/deal_with_overfitting/dropout.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,8 +19,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="19">
-                <caret line="93" column="28" selection-start-line="93" selection-start-column="28" selection-end-line="93" selection-end-column="28" />
+              <first_editor relative-caret-position="415">
+                <caret line="98" column="22" selection-start-line="98" selection-start-column="22" selection-end-line="98" selection-end-column="22" />
               </first_editor>
               <second_editor />
             </state>
@@ -25,27 +28,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ipynbs/appendix/deal_with_overfitting/dropout.py">
+        <entry file="file://$PROJECT_DIR$/ipynbs/appendix/optimizer/illustration_optim.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="220">
+              <caret line="95" column="60" lean-forward="true" selection-start-line="95" selection-start-column="60" selection-end-line="95" selection-end-column="60" />
               <folding>
-                <element signature="e#110#122#0" expanded="true" />
+                <element signature="e#0#11#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ipynbs/appendix/preprocess/异常值检测.ipynb">
-          <provider selected="true" editor-type-id="ipnb-editor">
-            <state>
-              <selected id="1" />
+        <entry file="file://$PROJECT_DIR$/ipynbs/appendix/deal_with_overfitting/dropout.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -55,6 +65,7 @@
       <list>
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/ipynbs/appendix/deal_with_overfitting/dropout.py" />
+        <option value="$PROJECT_DIR$/ipynbs/appendix/optimizer/illustration_optim.py" />
       </list>
     </option>
   </component>
@@ -67,7 +78,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -86,37 +96,11 @@
               <item name="ipynbs" type="462c0819:PsiDirectoryNode" />
               <item name="appendix" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Classic-ML-Methods-Algo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Classic-ML-Methods-Algo" type="462c0819:PsiDirectoryNode" />
-              <item name="ipynbs" type="462c0819:PsiDirectoryNode" />
-              <item name="appendix" type="462c0819:PsiDirectoryNode" />
-              <item name="deal_with_overfitting" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Classic-ML-Methods-Algo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Classic-ML-Methods-Algo" type="462c0819:PsiDirectoryNode" />
-              <item name="ipynbs" type="462c0819:PsiDirectoryNode" />
-              <item name="appendix" type="462c0819:PsiDirectoryNode" />
-              <item name="model_evaluation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Classic-ML-Methods-Algo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Classic-ML-Methods-Algo" type="462c0819:PsiDirectoryNode" />
-              <item name="ipynbs" type="462c0819:PsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Classic-ML-Methods-Algo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Classic-ML-Methods-Algo" type="462c0819:PsiDirectoryNode" />
-              <item name="ipynbs" type="462c0819:PsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -156,17 +140,20 @@
       <updated>1582355606077</updated>
       <workItem from="1582355607621" duration="2172000" />
       <workItem from="1582440839092" duration="166000" />
+      <workItem from="1582764679328" duration="211000" />
+      <workItem from="1582815426043" duration="97000" />
+      <workItem from="1582948680734" duration="3453000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2338000" />
+    <option name="totallyTimeSpent" value="6099000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -194,13 +181,10 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="19">
-            <caret line="93" column="28" selection-start-line="93" selection-start-column="28" selection-end-line="93" selection-end-column="28" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/ipynbs/appendix/model_evaluation/metrics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="6" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -211,19 +195,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ipynbs/appendix/model_evaluation/metrics.py">
-      <provider selected="true" editor-type-id="text-editor">
+    <entry file="file://$PROJECT_DIR$/ipynbs/appendix/topics_in_machine_learning/优化(optimization).ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
         <state>
-          <caret selection-end-line="6" selection-end-column="3" />
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ipynbs/appendix/metric.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ipynbs/appendix/BasicNotions.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="415">
+            <caret line="98" column="22" selection-start-line="98" selection-start-column="22" selection-end-line="98" selection-end-column="22" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ipynbs/appendix/deal_with_overfitting/dropout.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        <state relative-caret-position="133">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ipynbs/appendix/optimizer/illustration_optim.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="95" column="60" lean-forward="true" selection-start-line="95" selection-start-column="60" selection-end-line="95" selection-end-column="60" />
           <folding>
-            <element signature="e#110#122#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>

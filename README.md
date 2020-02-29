@@ -93,6 +93,11 @@
     + 聚类模型评估(clustering metrics)
     + 交叉检验(cross validation)
 
++ 优化器
+    + 标准梯度下降和Momentum(GD and Momentum)
+    + Momentum,RMSProp和AdaM
+    + AdaGrad和Adadelta
+
 + 损失函数 
     + 分类问题中MSE对比cross-entropy
 

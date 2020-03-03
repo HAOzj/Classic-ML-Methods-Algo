@@ -179,10 +179,10 @@ class PlotComparaison(object):
 
     def forward_momentum(self):
         """带Momentum的SGD一次迭代"""
-        self.d1 = self.eta * (self.mu * self.dx1_pre - self.dx1)
-        self.d2 = self.eta * (self.mu * self.dx2_pre - self.dx2)
+        self.d1 = self.eta * (self.mu * self.d1_pre - self.dx1)
+        self.d2 = self.eta * (self.mu * self.d2_pre - self.dx2)
         self.ite += 1
-        self.dx1_pre, self.dx2_pre = self.d1, self.d2
+        self.d1_pre, self.d2_pre = self.d1, self.d2
 
     def draw_momentum(self, num_ite=5):
         """画带Momentum的迭代优化."""
@@ -190,8 +190,8 @@ class PlotComparaison(object):
         setattr(self, "ite", 0)
         setattr(self, "x1", self.x1_init)
         setattr(self, "x2", self.x2_init)
-        setattr(self, "dx1_pre", 0)
-        setattr(self, "dx2_pre", 0)
+        setattr(self, "d1_pre", 0)
+        setattr(self, "d2_pre", 0)
 
         # 画每次迭代
         self.point_colors = [(i / num_ite, 0, 0) for i in range(num_ite)]

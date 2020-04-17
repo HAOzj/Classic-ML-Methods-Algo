@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f67534bc-cd11-4c9b-9d08-06664fa9b034" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="f67534bc-cd11-4c9b-9d08-06664fa9b034" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,9 +43,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="height" value="797" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -71,6 +70,13 @@
               <item name="Classic-ML-Methods-Algo" type="462c0819:PsiDirectoryNode" />
               <item name="ipynbs" type="462c0819:PsiDirectoryNode" />
               <item name="appendix" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Classic-ML-Methods-Algo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Classic-ML-Methods-Algo" type="462c0819:PsiDirectoryNode" />
+              <item name="ipynbs" type="462c0819:PsiDirectoryNode" />
+              <item name="appendix" type="462c0819:PsiDirectoryNode" />
+              <item name="model_evaluation" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -120,16 +126,17 @@
       <workItem from="1582815426043" duration="97000" />
       <workItem from="1582948680734" duration="4061000" />
       <workItem from="1583052954407" duration="207000" />
+      <workItem from="1583074234377" duration="133000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6914000" />
+    <option name="totallyTimeSpent" value="7047000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26752505" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
